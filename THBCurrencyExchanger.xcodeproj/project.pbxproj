@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
+		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
+		F5461B901F4BF7AB00DE0784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */; };
+		F5461B921F4BF7AB00DE0784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5461B911F4BF7AB00DE0784 /* Assets.xcassets */; };
+		F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */; };
+		F5461BA01F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B9F1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift */; };
+		F5461BAB1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BAA1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5461B9C1F4BF7AB00DE0784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5461B7F1F4BF7AB00DE0784 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5461B861F4BF7AB00DE0784;
+			remoteInfo = THBCurrencyExchanger;
+		};
+		F5461BA71F4BF7AB00DE0784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5461B7F1F4BF7AB00DE0784 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5461B861F4BF7AB00DE0784;
+			remoteInfo = THBCurrencyExchanger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F5461B8F1F4BF7AB00DE0784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5461B911F4BF7AB00DE0784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5461B941F4BF7AB00DE0784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5461B961F4BF7AB00DE0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5461B9B1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THBCurrencyExchangerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5461B9F1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THBCurrencyExchangerTests.swift; sourceTree = "<group>"; };
+		F5461BA11F4BF7AB00DE0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5461BA61F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THBCurrencyExchangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5461BAA1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THBCurrencyExchangerUITests.swift; sourceTree = "<group>"; };
+		F5461BAC1F4BF7AB00DE0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5461B841F4BF7AB00DE0784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5461B981F4BF7AB00DE0784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5461BA31F4BF7AB00DE0784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5461B7E1F4BF7AB00DE0784 = {
+			isa = PBXGroup;
+			children = (
+				F5461B891F4BF7AB00DE0784 /* THBCurrencyExchanger */,
+				F5461B9E1F4BF7AB00DE0784 /* THBCurrencyExchangerTests */,
+				F5461BA91F4BF7AB00DE0784 /* THBCurrencyExchangerUITests */,
+				F5461B881F4BF7AB00DE0784 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5461B881F4BF7AB00DE0784 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */,
+				F5461B9B1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.xctest */,
+				F5461BA61F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5461B891F4BF7AB00DE0784 /* THBCurrencyExchanger */ = {
+			isa = PBXGroup;
+			children = (
+				F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */,
+				F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */,
+				F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */,
+				F5461B911F4BF7AB00DE0784 /* Assets.xcassets */,
+				F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */,
+				F5461B961F4BF7AB00DE0784 /* Info.plist */,
+			);
+			path = THBCurrencyExchanger;
+			sourceTree = "<group>";
+		};
+		F5461B9E1F4BF7AB00DE0784 /* THBCurrencyExchangerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5461B9F1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift */,
+				F5461BA11F4BF7AB00DE0784 /* Info.plist */,
+			);
+			path = THBCurrencyExchangerTests;
+			sourceTree = "<group>";
+		};
+		F5461BA91F4BF7AB00DE0784 /* THBCurrencyExchangerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F5461BAA1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift */,
+				F5461BAC1F4BF7AB00DE0784 /* Info.plist */,
+			);
+			path = THBCurrencyExchangerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5461B861F4BF7AB00DE0784 /* THBCurrencyExchanger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5461BAF1F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchanger" */;
+			buildPhases = (
+				F5461B831F4BF7AB00DE0784 /* Sources */,
+				F5461B841F4BF7AB00DE0784 /* Frameworks */,
+				F5461B851F4BF7AB00DE0784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = THBCurrencyExchanger;
+			productName = THBCurrencyExchanger;
+			productReference = F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5461B9A1F4BF7AB00DE0784 /* THBCurrencyExchangerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5461BB21F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerTests" */;
+			buildPhases = (
+				F5461B971F4BF7AB00DE0784 /* Sources */,
+				F5461B981F4BF7AB00DE0784 /* Frameworks */,
+				F5461B991F4BF7AB00DE0784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5461B9D1F4BF7AB00DE0784 /* PBXTargetDependency */,
+			);
+			name = THBCurrencyExchangerTests;
+			productName = THBCurrencyExchangerTests;
+			productReference = F5461B9B1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5461BA51F4BF7AB00DE0784 /* THBCurrencyExchangerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5461BB51F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerUITests" */;
+			buildPhases = (
+				F5461BA21F4BF7AB00DE0784 /* Sources */,
+				F5461BA31F4BF7AB00DE0784 /* Frameworks */,
+				F5461BA41F4BF7AB00DE0784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5461BA81F4BF7AB00DE0784 /* PBXTargetDependency */,
+			);
+			name = THBCurrencyExchangerUITests;
+			productName = THBCurrencyExchangerUITests;
+			productReference = F5461BA61F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5461B7F1F4BF7AB00DE0784 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kuanhuachen;
+				TargetAttributes = {
+					F5461B861F4BF7AB00DE0784 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V7ACRS83M5;
+						ProvisioningStyle = Automatic;
+					};
+					F5461B9A1F4BF7AB00DE0784 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V7ACRS83M5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5461B861F4BF7AB00DE0784;
+					};
+					F5461BA51F4BF7AB00DE0784 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = V7ACRS83M5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F5461B861F4BF7AB00DE0784;
+					};
+				};
+			};
+			buildConfigurationList = F5461B821F4BF7AB00DE0784 /* Build configuration list for PBXProject "THBCurrencyExchanger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5461B7E1F4BF7AB00DE0784;
+			productRefGroup = F5461B881F4BF7AB00DE0784 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5461B861F4BF7AB00DE0784 /* THBCurrencyExchanger */,
+				F5461B9A1F4BF7AB00DE0784 /* THBCurrencyExchangerTests */,
+				F5461BA51F4BF7AB00DE0784 /* THBCurrencyExchangerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5461B851F4BF7AB00DE0784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */,
+				F5461B921F4BF7AB00DE0784 /* Assets.xcassets in Resources */,
+				F5461B901F4BF7AB00DE0784 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5461B991F4BF7AB00DE0784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5461BA41F4BF7AB00DE0784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5461B831F4BF7AB00DE0784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
+				F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5461B971F4BF7AB00DE0784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5461BA01F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5461BA21F4BF7AB00DE0784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5461BAB1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5461B9D1F4BF7AB00DE0784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5461B861F4BF7AB00DE0784 /* THBCurrencyExchanger */;
+			targetProxy = F5461B9C1F4BF7AB00DE0784 /* PBXContainerItemProxy */;
+		};
+		F5461BA81F4BF7AB00DE0784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5461B861F4BF7AB00DE0784 /* THBCurrencyExchanger */;
+			targetProxy = F5461BA71F4BF7AB00DE0784 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5461B8F1F4BF7AB00DE0784 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5461B941F4BF7AB00DE0784 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5461BAD1F4BF7AB00DE0784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5461BAE1F4BF7AB00DE0784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5461BB01F4BF7AB00DE0784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V7ACRS83M5;
+				INFOPLIST_FILE = THBCurrencyExchanger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F5461BB11F4BF7AB00DE0784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V7ACRS83M5;
+				INFOPLIST_FILE = THBCurrencyExchanger/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchanger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F5461BB31F4BF7AB00DE0784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V7ACRS83M5;
+				INFOPLIST_FILE = THBCurrencyExchangerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THBCurrencyExchanger.app/THBCurrencyExchanger";
+			};
+			name = Debug;
+		};
+		F5461BB41F4BF7AB00DE0784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = V7ACRS83M5;
+				INFOPLIST_FILE = THBCurrencyExchangerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchangerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/THBCurrencyExchanger.app/THBCurrencyExchanger";
+			};
+			name = Release;
+		};
+		F5461BB61F4BF7AB00DE0784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V7ACRS83M5;
+				INFOPLIST_FILE = THBCurrencyExchangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = THBCurrencyExchanger;
+			};
+			name = Debug;
+		};
+		F5461BB71F4BF7AB00DE0784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = V7ACRS83M5;
+				INFOPLIST_FILE = THBCurrencyExchangerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchangerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = THBCurrencyExchanger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5461B821F4BF7AB00DE0784 /* Build configuration list for PBXProject "THBCurrencyExchanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5461BAD1F4BF7AB00DE0784 /* Debug */,
+				F5461BAE1F4BF7AB00DE0784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5461BAF1F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchanger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5461BB01F4BF7AB00DE0784 /* Debug */,
+				F5461BB11F4BF7AB00DE0784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5461BB21F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5461BB31F4BF7AB00DE0784 /* Debug */,
+				F5461BB41F4BF7AB00DE0784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5461BB51F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5461BB61F4BF7AB00DE0784 /* Debug */,
+				F5461BB71F4BF7AB00DE0784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5461B7F1F4BF7AB00DE0784 /* Project object */;
+}
