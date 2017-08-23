@@ -10,7 +10,6 @@
 		0CF0CDE6EBE6EDDAB33092FA /* Pods_THBCurrencyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */; };
 		42CA5C3EAF97EFD23D51349E /* Pods_THBCurrencyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */; };
 		89D6BCB186A65377CEE4004B /* Pods_THBCurrencyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */; };
-		F50217EF1F4D4C0F0041C7C9 /* collectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217EE1F4D4C0F0041C7C9 /* collectionViewLayout.swift */; };
 		F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217F01F4D66210041C7C9 /* TabBarViewController.swift */; };
 		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
 		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
@@ -51,7 +50,6 @@
 		82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F50217EE1F4D4C0F0041C7C9 /* collectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionViewLayout.swift; sourceTree = "<group>"; };
 		F50217F01F4D66210041C7C9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				F50217F01F4D66210041C7C9 /* TabBarViewController.swift */,
 				F5461BB81F4BF8F500DE0784 /* MainViewController.swift */,
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
-				F50217EE1F4D4C0F0041C7C9 /* collectionViewLayout.swift */,
 				F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */,
 				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				F5461B911F4BF7AB00DE0784 /* Assets.xcassets */,
@@ -465,7 +462,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F50217EF1F4D4C0F0041C7C9 /* collectionViewLayout.swift in Sources */,
 				F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */,
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
 				F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */,

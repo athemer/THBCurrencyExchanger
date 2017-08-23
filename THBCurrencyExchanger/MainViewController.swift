@@ -22,10 +22,6 @@ class MainViewController: UIViewController {
         
         registerCell()
         
-//        let layout = CollectionViewLayout()
-//        
-//        self.collectionView.collectionViewLayout = layout
-        
         let layout = UPCarouselFlowLayout()
         layout.itemSize = CGSize(width: 300, height: 200)
         layout.scrollDirection = .horizontal
