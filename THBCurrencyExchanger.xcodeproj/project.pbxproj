@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CF0CDE6EBE6EDDAB33092FA /* Pods_THBCurrencyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */; };
+		42CA5C3EAF97EFD23D51349E /* Pods_THBCurrencyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */; };
+		89D6BCB186A65377CEE4004B /* Pods_THBCurrencyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */; };
+		F50217EF1F4D4C0F0041C7C9 /* collectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217EE1F4D4C0F0041C7C9 /* collectionViewLayout.swift */; };
+		F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217F01F4D66210041C7C9 /* TabBarViewController.swift */; };
 		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
 		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
 		F5461B901F4BF7AB00DE0784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */; };
@@ -14,6 +19,9 @@
 		F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */; };
 		F5461BA01F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B9F1F4BF7AB00DE0784 /* THBCurrencyExchangerTests.swift */; };
 		F5461BAB1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BAA1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift */; };
+		F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BB81F4BF8F500DE0784 /* MainViewController.swift */; };
+		F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */; };
+		F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THBCurrencyExchangerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THBCurrencyExchangerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		460089D4763A10693FFD3CBE /* Pods-THBCurrencyExchanger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchanger.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchanger/Pods-THBCurrencyExchanger.release.xcconfig"; sourceTree = "<group>"; };
+		61ADC6BACF92AC5D2EA23D21 /* Pods-THBCurrencyExchanger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchanger.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchanger/Pods-THBCurrencyExchanger.debug.xcconfig"; sourceTree = "<group>"; };
+		793822A599B99EEE84C40E83 /* Pods-THBCurrencyExchangerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_THBCurrencyExchanger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
+		88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F50217EE1F4D4C0F0041C7C9 /* collectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionViewLayout.swift; sourceTree = "<group>"; };
+		F50217F01F4D66210041C7C9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +66,9 @@
 		F5461BA61F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = THBCurrencyExchangerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461BAA1F4BF7AB00DE0784 /* THBCurrencyExchangerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = THBCurrencyExchangerUITests.swift; sourceTree = "<group>"; };
 		F5461BAC1F4BF7AB00DE0784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5461BB81F4BF8F500DE0784 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksCollectionViewCell.swift; sourceTree = "<group>"; };
+		F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BanksCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CA5C3EAF97EFD23D51349E /* Pods_THBCurrencyExchanger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D6BCB186A65377CEE4004B /* Pods_THBCurrencyExchangerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CF0CDE6EBE6EDDAB33092FA /* Pods_THBCurrencyExchangerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191DF06925DF7AC0DE34BB8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */,
+				07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */,
+				36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27F10E0EE95FE9161781F889 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61ADC6BACF92AC5D2EA23D21 /* Pods-THBCurrencyExchanger.debug.xcconfig */,
+				460089D4763A10693FFD3CBE /* Pods-THBCurrencyExchanger.release.xcconfig */,
+				793822A599B99EEE84C40E83 /* Pods-THBCurrencyExchangerTests.debug.xcconfig */,
+				82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */,
+				AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */,
+				88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F5461B7E1F4BF7AB00DE0784 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +129,8 @@
 				F5461B9E1F4BF7AB00DE0784 /* THBCurrencyExchangerTests */,
 				F5461BA91F4BF7AB00DE0784 /* THBCurrencyExchangerUITests */,
 				F5461B881F4BF7AB00DE0784 /* Products */,
+				27F10E0EE95FE9161781F889 /* Pods */,
+				191DF06925DF7AC0DE34BB8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +149,12 @@
 			children = (
 				F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */,
 				F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */,
+				F50217F01F4D66210041C7C9 /* TabBarViewController.swift */,
+				F5461BB81F4BF8F500DE0784 /* MainViewController.swift */,
+				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
+				F50217EE1F4D4C0F0041C7C9 /* collectionViewLayout.swift */,
 				F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */,
+				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				F5461B911F4BF7AB00DE0784 /* Assets.xcassets */,
 				F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */,
 				F5461B961F4BF7AB00DE0784 /* Info.plist */,
@@ -132,9 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5461BAF1F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchanger" */;
 			buildPhases = (
+				0C9794EBC46BE3343E5C0632 /* [CP] Check Pods Manifest.lock */,
 				F5461B831F4BF7AB00DE0784 /* Sources */,
 				F5461B841F4BF7AB00DE0784 /* Frameworks */,
 				F5461B851F4BF7AB00DE0784 /* Resources */,
+				C54F0AE5272895E27F940B87 /* [CP] Embed Pods Frameworks */,
+				5B1D19F88031E6E6B7B8E7B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5461BB21F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerTests" */;
 			buildPhases = (
+				7C88AE2E287E60BF7929C536 /* [CP] Check Pods Manifest.lock */,
 				F5461B971F4BF7AB00DE0784 /* Sources */,
 				F5461B981F4BF7AB00DE0784 /* Frameworks */,
 				F5461B991F4BF7AB00DE0784 /* Resources */,
+				898C18082A4EFA2A60928179 /* [CP] Embed Pods Frameworks */,
+				0D1DDD238A2EB21B0659C157 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +228,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5461BB51F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerUITests" */;
 			buildPhases = (
+				CF06D7B7B1F18EF090F611FC /* [CP] Check Pods Manifest.lock */,
 				F5461BA21F4BF7AB00DE0784 /* Sources */,
 				F5461BA31F4BF7AB00DE0784 /* Frameworks */,
 				F5461BA41F4BF7AB00DE0784 /* Resources */,
+				FF93B6DDBF7904FA8EB25E1C /* [CP] Embed Pods Frameworks */,
+				CB04FB4C2DCF76EAE5F32E8E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +301,7 @@
 			files = (
 				F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */,
 				F5461B921F4BF7AB00DE0784 /* Assets.xcassets in Resources */,
+				F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */,
 				F5461B901F4BF7AB00DE0784 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,12 +322,154 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C9794EBC46BE3343E5C0632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		0D1DDD238A2EB21B0659C157 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1D19F88031E6E6B7B8E7B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THBCurrencyExchanger/Pods-THBCurrencyExchanger-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C88AE2E287E60BF7929C536 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		898C18082A4EFA2A60928179 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C54F0AE5272895E27F940B87 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THBCurrencyExchanger/Pods-THBCurrencyExchanger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB04FB4C2DCF76EAE5F32E8E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF06D7B7B1F18EF090F611FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF93B6DDBF7904FA8EB25E1C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5461B831F4BF7AB00DE0784 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F50217EF1F4D4C0F0041C7C9 /* collectionViewLayout.swift in Sources */,
+				F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */,
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
+				F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */,
+				F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */,
 				F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,10 +620,12 @@
 		};
 		F5461BB01F4BF7AB00DE0784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61ADC6BACF92AC5D2EA23D21 /* Pods-THBCurrencyExchanger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7ACRS83M5;
 				INFOPLIST_FILE = THBCurrencyExchanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchanger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -426,10 +635,12 @@
 		};
 		F5461BB11F4BF7AB00DE0784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 460089D4763A10693FFD3CBE /* Pods-THBCurrencyExchanger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V7ACRS83M5;
 				INFOPLIST_FILE = THBCurrencyExchanger/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = kuan.THBCurrencyExchanger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,6 +650,7 @@
 		};
 		F5461BB31F4BF7AB00DE0784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793822A599B99EEE84C40E83 /* Pods-THBCurrencyExchangerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +666,7 @@
 		};
 		F5461BB41F4BF7AB00DE0784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -469,6 +682,7 @@
 		};
 		F5461BB61F4BF7AB00DE0784 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = V7ACRS83M5;
@@ -483,6 +697,7 @@
 		};
 		F5461BB71F4BF7AB00DE0784 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = V7ACRS83M5;
@@ -514,6 +729,7 @@
 				F5461BB11F4BF7AB00DE0784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5461BB21F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +738,7 @@
 				F5461BB41F4BF7AB00DE0784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5461BB51F4BF7AB00DE0784 /* Build configuration list for PBXNativeTarget "THBCurrencyExchangerUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +747,7 @@
 				F5461BB71F4BF7AB00DE0784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

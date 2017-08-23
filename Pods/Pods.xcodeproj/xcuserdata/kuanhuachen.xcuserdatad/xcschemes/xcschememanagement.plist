@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-THBCurrencyExchanger.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-THBCurrencyExchangerTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-THBCurrencyExchangerUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>UPCarouselFlowLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>099CD1CAEFEE02F89D457075FE798C65</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>12ED1989A39E9722328D0DAE5165CC0E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A4860216FEB4357599A7EFF2F3FD155A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C40728CD9A14A2CB6DB10901F1C0AEBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

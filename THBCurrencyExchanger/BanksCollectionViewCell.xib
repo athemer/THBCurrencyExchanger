@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BankCell" id="gTV-IL-0wX" customClass="BanksCollectionViewCell" customModule="THBCurrencyExchanger" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="257"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="257"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-uS-q4f">
+                        <rect key="frame" x="0.0" y="0.0" width="163" height="257"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Y5A-uS-q4f" secondAttribute="bottom" id="2UI-mp-YSs"/>
+                <constraint firstAttribute="trailing" secondItem="Y5A-uS-q4f" secondAttribute="trailing" id="6aK-Lt-dRm"/>
+                <constraint firstItem="Y5A-uS-q4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VdO-wD-7VG"/>
+                <constraint firstItem="Y5A-uS-q4f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XCS-Hv-1VF"/>
+            </constraints>
+            <size key="customSize" width="163" height="206"/>
+            <point key="canvasLocation" x="-27.5" y="-74.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
