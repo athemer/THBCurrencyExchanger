@@ -8,6 +8,10 @@ target 'THBCurrencyExchanger' do
   # Pods for THBCurrencyExchanger
 
   pod 'UPCarouselFlowLayout'
+  pod 'SCLAlertView'
+  pod 'GoogleMaps'
+  pod 'Hero'
+  pod 'EZLoadingActivity'
 
   target 'THBCurrencyExchangerTests' do
     inherit! :search_paths

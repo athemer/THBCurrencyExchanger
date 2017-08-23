@@ -8,6 +8,7 @@
 
 import UIKit
 import UPCarouselFlowLayout
+import SCLAlertView
 
 class MainViewController: UIViewController {
 
@@ -27,7 +28,14 @@ class MainViewController: UIViewController {
         layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout
         
-        self.tabBarController?.tabBar.barTintColor = .black
+        self.tabBarController?.tabBar.barTintColor = UIColor(red: 235/255, green: 123/255, blue: 45/255, alpha: 1)
+
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        self.showNotReachableAlert()
 
     }
 
@@ -48,7 +56,19 @@ class MainViewController: UIViewController {
         self.collectionView.register(nib, forCellWithReuseIdentifier: "BankCell")
         
     }
-    
+
+    func showNotReachableAlert() {
+
+        SCLAlertView().showWarning("Warning", subTitle: "沒有網路的狀態下\n無法獲取最新匯率")
+
+    }
+
+    @IBAction func toMap(_ sender: Any) {
+
+        performSegue(withIdentifier: "mainToMap", sender: nil)
+
+    }
+
 
 }
 
