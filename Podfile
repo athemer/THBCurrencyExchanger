@@ -13,6 +13,8 @@ target 'THBCurrencyExchanger' do
   pod 'Hero'
   pod 'EZLoadingActivity'
   pod 'Alamofire'
+  pod 'NVActivityIndicatorView'
+
 
   target 'THBCurrencyExchangerTests' do
     inherit! :search_paths

@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>NVActivityIndicatorView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-THBCurrencyExchanger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -57,12 +62,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3DD17065BD8469A3A780D4449AD206AF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3EDFE4052B5DE7D509935AC0774CB135</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4A3E211676B243619B026D147D272253</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>808B1957E7E6DA1D90BFD551BDA4046F</key>
+		<key>5541B7A96BD1696B2B6E47332A102386</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,17 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>B1066E1334FF61C8CFA2D01666DD25EB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B68B30BAA59D3C581E36B229F5026576</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E7C8A0094E073C00DFA82EB63720D13A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FFE96F9081758BE41595B3B15A206B4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

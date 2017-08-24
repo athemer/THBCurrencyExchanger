@@ -7,6 +7,9 @@ PODS:
   - GoogleMaps/Maps (2.3.1):
     - GoogleMaps/Base
   - Hero (0.3.6)
+  - NVActivityIndicatorView (3.7.0):
+    - NVActivityIndicatorView/Presenter (= 3.7.0)
+  - NVActivityIndicatorView/Presenter (3.7.0)
   - SCLAlertView (0.7.0)
   - UPCarouselFlowLayout (1.1.1)
 
@@ -15,6 +18,7 @@ DEPENDENCIES:
   - EZLoadingActivity
   - GoogleMaps
   - Hero
+  - NVActivityIndicatorView
   - SCLAlertView
   - UPCarouselFlowLayout
 
@@ -23,9 +27,10 @@ SPEC CHECKSUMS:
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
+  NVActivityIndicatorView: d3738df7e2e476aca0ba6bf32a8c9fbcfc33d64b
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: a96df33df8369e6f3113492e307b5dc831eab209
+PODFILE CHECKSUM: 0382eab20e2df94dcab2ea34c141c155391afa17
 
 COCOAPODS: 1.2.1
