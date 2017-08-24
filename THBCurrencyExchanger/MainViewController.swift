@@ -14,6 +14,8 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     
+    let networkManager = NetworkManager()
+    
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,8 @@ class MainViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         
         self.tabBarController?.tabBar.barTintColor = UIColor(red: 235/255, green: 123/255, blue: 45/255, alpha: 1)
+        
+        print (" @@@@@ check reachability ", networkManager.isReachable())
 
     }
 

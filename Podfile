@@ -12,6 +12,7 @@ target 'THBCurrencyExchanger' do
   pod 'GoogleMaps'
   pod 'Hero'
   pod 'EZLoadingActivity'
+  pod 'Alamofire'
 
   target 'THBCurrencyExchangerTests' do
     inherit! :search_paths

@@ -23,6 +23,7 @@
 		F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BB81F4BF8F500DE0784 /* MainViewController.swift */; };
 		F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */; };
 		F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */; };
+		F59A3DC51F4EDC66000C83B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A3DC41F4EDC66000C83B3 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F5461BB81F4BF8F500DE0784 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BanksCollectionViewCell.xib; sourceTree = "<group>"; };
+		F59A3DC41F4EDC66000C83B3 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
 				D1CB71531F4DC42D001D49BA /* MapViewController.swift */,
 				D1CB71551F4DC43F001D49BA /* ResultViewController.swift */,
+				F59A3DC41F4EDC66000C83B3 /* NetworkManager.swift */,
 				F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */,
 				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				F5461B911F4BF7AB00DE0784 /* Assets.xcassets */,
@@ -338,7 +341,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		0D1DDD238A2EB21B0659C157 /* [CP] Copy Pods Resources */ = {
@@ -383,7 +386,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		898C18082A4EFA2A60928179 /* [CP] Embed Pods Frameworks */ = {
@@ -443,7 +446,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		FF93B6DDBF7904FA8EB25E1C /* [CP] Embed Pods Frameworks */ = {
@@ -472,6 +475,7 @@
 				D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */,
 				D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */,
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
+				F59A3DC51F4EDC66000C83B3 /* NetworkManager.swift in Sources */,
 				F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */,
 				F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */,
 				F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */,

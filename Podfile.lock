@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.0)
   - EZLoadingActivity (1.01)
   - GoogleMaps (2.3.1):
     - GoogleMaps/Maps (= 2.3.1)
@@ -10,6 +11,7 @@ PODS:
   - UPCarouselFlowLayout (1.1.1)
 
 DEPENDENCIES:
+  - Alamofire
   - EZLoadingActivity
   - GoogleMaps
   - Hero
@@ -17,12 +19,13 @@ DEPENDENCIES:
   - UPCarouselFlowLayout
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: ff232be470ced33cbfdb4f10ccbfacf8e8694da0
+PODFILE CHECKSUM: a96df33df8369e6f3113492e307b5dc831eab209
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

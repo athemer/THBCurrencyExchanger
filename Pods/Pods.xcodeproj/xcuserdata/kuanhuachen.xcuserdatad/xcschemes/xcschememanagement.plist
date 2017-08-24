@@ -4,6 +4,21 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>EZLoadingActivity.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Hero.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-THBCurrencyExchanger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -15,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>Pods-THBCurrencyExchangerUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,12 +57,32 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A4860216FEB4357599A7EFF2F3FD155A</key>
+		<key>4A3E211676B243619B026D147D272253</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C40728CD9A14A2CB6DB10901F1C0AEBA</key>
+		<key>808B1957E7E6DA1D90BFD551BDA4046F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B68B30BAA59D3C581E36B229F5026576</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7C8A0094E073C00DFA82EB63720D13A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FFE96F9081758BE41595B3B15A206B4A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
