@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.0)
   - EZLoadingActivity (1.01)
   - GoogleMaps (2.3.1):
     - GoogleMaps/Maps (= 2.3.1)
@@ -6,31 +7,50 @@ PODS:
   - GoogleMaps/Maps (2.3.1):
     - GoogleMaps/Base
   - Hero (0.3.6)
+  - IQKeyboardManagerSwift (4.0.10)
+  - Kanna (2.2.1)
   - Material (2.7.1):
     - Material/Core (= 2.7.1)
   - Material/Core (2.7.1)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
   - SCLAlertView (0.7.0)
   - SkyFloatingLabelTextField (3.2.0)
+  - SwiftyJSON (3.1.4)
   - UPCarouselFlowLayout (1.1.1)
 
 DEPENDENCIES:
+  - Alamofire
   - EZLoadingActivity
   - GoogleMaps
   - Hero
+  - IQKeyboardManagerSwift
+  - Kanna
   - Material
+  - RealmSwift
   - SCLAlertView
   - SkyFloatingLabelTextField
+  - SwiftyJSON
   - UPCarouselFlowLayout
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
+  IQKeyboardManagerSwift: 75ba21a23794a1e6b6fe6d9a267ea17f80e06771
+  Kanna: 182789ab065e8f9a6ccc2a74ce6283d3401c0c4a
   Material: 13071c7cd340d54b4f9c839b386338a1e082b25e
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   SkyFloatingLabelTextField: 4e2d2f7160af660ed1da6bb9d0027b5c474b4b79
+  SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: e9af69448a99919d7132f5ec17d2507a57446bd1
+PODFILE CHECKSUM: 0ce106103ca5df0cc329fe9bfcaa8fbe5fe0ff86
 
 COCOAPODS: 1.2.0

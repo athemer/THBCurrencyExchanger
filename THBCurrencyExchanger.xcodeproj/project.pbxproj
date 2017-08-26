@@ -10,9 +10,12 @@
 		0CF0CDE6EBE6EDDAB33092FA /* Pods_THBCurrencyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */; };
 		42CA5C3EAF97EFD23D51349E /* Pods_THBCurrencyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */; };
 		89D6BCB186A65377CEE4004B /* Pods_THBCurrencyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */; };
+		D1C3A79D1F51A05E00F47EF1 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */; };
 		D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71531F4DC42D001D49BA /* MapViewController.swift */; };
 		D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71551F4DC43F001D49BA /* ResultViewController.swift */; };
 		D1CB715A1F511686001D49BA /* TestTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71591F511686001D49BA /* TestTextfield.swift */; };
+		D1CB715E1F513B66001D49BA /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB715D1F513B66001D49BA /* NetWorkManager.swift */; };
+		D1CB71601F514336001D49BA /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB715F1F514336001D49BA /* BankModel.swift */; };
 		F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217F01F4D66210041C7C9 /* TabBarViewController.swift */; };
 		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
 		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
@@ -53,9 +56,12 @@
 		82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D1CB71531F4DC42D001D49BA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D1CB71551F4DC43F001D49BA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		D1CB71591F511686001D49BA /* TestTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTextfield.swift; sourceTree = "<group>"; };
+		D1CB715D1F513B66001D49BA /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
+		D1CB715F1F514336001D49BA /* BankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
 		F50217F01F4D66210041C7C9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +132,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D1C3A79E1F51A20E00F47EF1 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				D1CB715F1F514336001D49BA /* BankModel.swift */,
+				D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */,
+			);
+			name = "Data Models";
+			sourceTree = "<group>";
+		};
+		D1C3A79F1F51A22500F47EF1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5461BB81F4BF8F500DE0784 /* MainViewController.swift */,
+				D1CB71531F4DC42D001D49BA /* MapViewController.swift */,
+				D1CB71551F4DC43F001D49BA /* ResultViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D1C3A7A01F51A7BE00F47EF1 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */,
+			);
+			name = StoryBoards;
+			sourceTree = "<group>";
+		};
 		F5461B7E1F4BF7AB00DE0784 = {
 			isa = PBXGroup;
 			children = (
@@ -152,14 +185,14 @@
 			isa = PBXGroup;
 			children = (
 				F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */,
+				D1CB715D1F513B66001D49BA /* NetWorkManager.swift */,
 				F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */,
 				F50217F01F4D66210041C7C9 /* TabBarViewController.swift */,
-				F5461BB81F4BF8F500DE0784 /* MainViewController.swift */,
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
-				D1CB71531F4DC42D001D49BA /* MapViewController.swift */,
-				D1CB71551F4DC43F001D49BA /* ResultViewController.swift */,
 				D1CB71591F511686001D49BA /* TestTextfield.swift */,
-				F5461B8E1F4BF7AB00DE0784 /* Main.storyboard */,
+				D1C3A7A01F51A7BE00F47EF1 /* StoryBoards */,
+				D1C3A79F1F51A22500F47EF1 /* View Controllers */,
+				D1C3A79E1F51A20E00F47EF1 /* Data Models */,
 				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				F5461B911F4BF7AB00DE0784 /* Assets.xcassets */,
 				F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */,
@@ -472,10 +505,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */,
+				D1CB71601F514336001D49BA /* BankModel.swift in Sources */,
 				D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */,
 				D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */,
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
+				D1C3A79D1F51A05E00F47EF1 /* LocationModel.swift in Sources */,
 				F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */,
+				D1CB715E1F513B66001D49BA /* NetWorkManager.swift in Sources */,
 				F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */,
 				F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */,
 				D1CB715A1F511686001D49BA /* TestTextfield.swift in Sources */,

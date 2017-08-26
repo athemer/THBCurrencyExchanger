@@ -14,6 +14,12 @@ target 'THBCurrencyExchanger' do
   pod 'EZLoadingActivity'
   pod 'Material'
   pod 'SkyFloatingLabelTextField'
+  pod 'Alamofire'
+  pod 'Kanna'
+  pod 'SwiftyJSON'
+  pod 'RealmSwift'
+  pod 'IQKeyboardManagerSwift'
+
 
 
 

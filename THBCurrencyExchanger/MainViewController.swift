@@ -10,12 +10,18 @@ import UIKit
 import UPCarouselFlowLayout
 import SCLAlertView
 import SkyFloatingLabelTextField
+import RealmSwift
+import EZLoadingActivity
 
 class MainViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
     @IBOutlet weak var buttomBaseView: UIView!
+
+    let manager = NetWorkManager()
+
+    var bo: Bool = false
 
     
     //MARK: Life Cycle
@@ -32,16 +38,22 @@ class MainViewController: UIViewController {
         layout.scrollDirection = .horizontal
         collectionView.collectionViewLayout = layout
         
-        self.tabBarController?.tabBar.barTintColor = UIColor(red: 235/255, green: 123/255, blue: 45/255, alpha: 1)
+        self.tabBarController?.tabBar.barTintColor = UIColor(red: 73/255, green: 57/255, blue: 151/255, alpha: 1)
 
         configureTextField()
+
+
+
+
 
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.showNotReachableAlert()
+        
+        self.manager.scrapeSuperRichOrangeBr8()
+//        self.showNotReachableAlert()
 
     }
 
@@ -84,9 +96,34 @@ class MainViewController: UIViewController {
     }
 
 
+    func readResults(){
+        let realm = try! Realm()
+        let users = realm.objects(BankModel.self)
+        if users.count > 0 {
+            print(users[0].bankName)
+        }
+    }
+
     @IBAction func toMap(_ sender: Any) {
 
-        performSegue(withIdentifier: "mainToMap", sender: nil)
+
+        if self.bo {
+
+            readResults()
+
+
+        } else {
+
+            self.manager.scrapeSuperRichOrangeBr8()
+            self.bo = true
+
+
+        }
+
+
+
+
+        //performSegue(withIdentifier: "mainToMap", sender: nil)
 
     }
 
