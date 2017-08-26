@@ -14,6 +14,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Material-com.cosmicmind.material.fonts.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material-com.cosmicmind.material.icons.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Material.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-THBCurrencyExchanger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -30,6 +45,11 @@
 			<false/>
 		</dict>
 		<key>SCLAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SkyFloatingLabelTextField.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,17 +72,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>31DA5FAFDF905892253C044E267FC5CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4A3E211676B243619B026D147D272253</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8BF68FA39986D77300B251714F4BCAC1</key>
+		<key>6D70027C7CC8923E61FCC717138E5305</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A92DACEF65710A6943DEE17AC28A6D74</key>
+		<key>7E2EDAA4955AB4707E32F82ED76AC8E4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8A00B502B86D7FF028FFEB7010B86338</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +102,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF2EDD8C5F0DFF9E2E3358B5209DB965</key>
+		<key>E5CD470E4970CEE6A3DC3A70DCCDDA28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FC7D467D37FC008A360FD2C5574DED74</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF01A5F247DA8BE1B205E7A35501A125</key>
 		<dict>
 			<key>primary</key>
 			<true/>

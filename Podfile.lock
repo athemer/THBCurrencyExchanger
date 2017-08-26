@@ -6,23 +6,31 @@ PODS:
   - GoogleMaps/Maps (2.3.1):
     - GoogleMaps/Base
   - Hero (0.3.6)
+  - Material (2.7.1):
+    - Material/Core (= 2.7.1)
+  - Material/Core (2.7.1)
   - SCLAlertView (0.7.0)
+  - SkyFloatingLabelTextField (3.2.0)
   - UPCarouselFlowLayout (1.1.1)
 
 DEPENDENCIES:
   - EZLoadingActivity
   - GoogleMaps
   - Hero
+  - Material
   - SCLAlertView
+  - SkyFloatingLabelTextField
   - UPCarouselFlowLayout
 
 SPEC CHECKSUMS:
   EZLoadingActivity: edd7e387e5197b116ce2cccb3fd747ababc2a510
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   Hero: d3c6f4dd80cdcdbb339be64e57ae3b5c3ab9938c
+  Material: 13071c7cd340d54b4f9c839b386338a1e082b25e
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
+  SkyFloatingLabelTextField: 4e2d2f7160af660ed1da6bb9d0027b5c474b4b79
   UPCarouselFlowLayout: 02045c1505d63057fba3d9975be880a8d16bf17d
 
-PODFILE CHECKSUM: ff232be470ced33cbfdb4f10ccbfacf8e8694da0
+PODFILE CHECKSUM: e9af69448a99919d7132f5ec17d2507a57446bd1
 
 COCOAPODS: 1.2.0

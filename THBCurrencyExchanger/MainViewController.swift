@@ -9,10 +9,14 @@
 import UIKit
 import UPCarouselFlowLayout
 import SCLAlertView
+import SkyFloatingLabelTextField
 
 class MainViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+
+    @IBOutlet weak var buttomBaseView: UIView!
+
     
     //MARK: Life Cycle
     override func viewDidLoad() {
@@ -29,6 +33,8 @@ class MainViewController: UIViewController {
         collectionView.collectionViewLayout = layout
         
         self.tabBarController?.tabBar.barTintColor = UIColor(red: 235/255, green: 123/255, blue: 45/255, alpha: 1)
+
+        configureTextField()
 
     }
 
@@ -63,6 +69,21 @@ class MainViewController: UIViewController {
 
     }
 
+    func configureTextField() {
+
+        let textField = SkyFloatingLabelTextField(frame: CGRect(x: 50, y: 125, width: 300, height: 100))
+        textField.placeholder = "Name"
+        textField.title = "Your full name"
+        textField.font = UIFont(name: "Avenir Next", size: 50)
+        textField.placeholderFont = UIFont(name: "Avenir Next", size: 25)
+        textField.keyboardType = .numberPad
+        textField.delegate = self
+        self.buttomBaseView.addSubview(textField)
+
+
+    }
+
+
     @IBAction func toMap(_ sender: Any) {
 
         performSegue(withIdentifier: "mainToMap", sender: nil)
@@ -93,6 +114,46 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         print (" @@@@@ ", indexPath.item)
     }
     
+}
+
+extension MainViewController: UITextFieldDelegate {
+
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+
+        // Uses the number format corresponding to your Locale
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.locale = Locale.current
+        formatter.maximumFractionDigits = 0
+
+
+        // Uses the grouping separator corresponding to your Locale
+        // e.g. "," in the US, a space in France, and so on
+        if let groupingSeparator = formatter.groupingSeparator {
+
+            if string == groupingSeparator {
+                return true
+            }
+
+
+            if let textWithoutGroupingSeparator = textField.text?.replacingOccurrences(of: groupingSeparator, with: "") {
+                var totalTextWithoutGroupingSeparators = textWithoutGroupingSeparator + string
+                if string == "" { // pressed Backspace key
+                    totalTextWithoutGroupingSeparators.characters.removeLast()
+                }
+                if let numberWithoutGroupingSeparator = formatter.number(from: totalTextWithoutGroupingSeparators),
+                    let formattedText = formatter.string(from: numberWithoutGroupingSeparator) {
+                    
+                    textField.text = formattedText
+                    return false
+                }
+            }
+        }
+
+
+        return true
+    }
+
 }
 
 

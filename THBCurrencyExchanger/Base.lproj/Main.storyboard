@@ -27,6 +27,24 @@
             </objects>
             <point key="canvasLocation" x="775" y="595"/>
         </scene>
+        <!--Test Text Field-->
+        <scene sceneID="Ibz-Jj-KVz">
+            <objects>
+                <viewController id="s2v-fP-YsQ" customClass="TestTextField" customModule="THBCurrencyExchanger" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SGW-W1-Awq"/>
+                        <viewControllerLayoutGuide type="bottom" id="SOK-Or-qZX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ybQ-P9-Gp7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nuh-B3-CY1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2477" y="991"/>
+        </scene>
         <!--計算器-->
         <scene sceneID="d99-A0-QGZ">
             <objects>
@@ -39,8 +57,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6n-2m-E11">
+                                <rect key="frame" x="0.0" y="318" width="375" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.21176470589999999" green="0.47843137250000001" blue="0.74117647060000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVw-Iu-wh6">
-                                <rect key="frame" x="37" y="118" width="300" height="200"/>
+                                <rect key="frame" x="37" y="50" width="300" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
@@ -48,9 +71,9 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jG-DQ-62j">
-                                <rect key="frame" x="0.0" y="115" width="375" height="205"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="205"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.72156862745098038" green="0.72156862745098038" blue="0.72156862745098038" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gPz-lI-5Cq">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -68,6 +91,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8J-aM-NQn">
                                 <rect key="frame" x="236" y="555" width="102" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="toMap:" destination="9kf-Z2-P4g" eventType="touchUpInside" id="sce-co-cvo"/>
@@ -81,6 +105,7 @@
                         <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
                     </userDefinedRuntimeAttributes>
                     <connections>
+                        <outlet property="buttomBaseView" destination="w6n-2m-E11" id="Vwe-1A-hZO"/>
                         <outlet property="collectionView" destination="0jG-DQ-62j" id="9iy-99-fs0"/>
                         <segue destination="4gK-sV-xGX" kind="show" identifier="mainToMap" id="js8-iK-eM0"/>
                         <segue destination="BEq-LT-x9r" kind="show" id="nUt-do-qy2"/>

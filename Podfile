@@ -12,6 +12,10 @@ target 'THBCurrencyExchanger' do
   pod 'GoogleMaps'
   pod 'Hero'
   pod 'EZLoadingActivity'
+  pod 'Material'
+  pod 'SkyFloatingLabelTextField'
+
+
 
   target 'THBCurrencyExchangerTests' do
     inherit! :search_paths
