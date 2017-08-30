@@ -17,6 +17,8 @@
 		D1CB715E1F513B66001D49BA /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB715D1F513B66001D49BA /* NetWorkManager.swift */; };
 		D1CB71601F514336001D49BA /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB715F1F514336001D49BA /* BankModel.swift */; };
 		D1FBA07B1F55BE5E002C19E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */; };
+		D1FBA07E1F570042002C19E2 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA07C1F570042002C19E2 /* ResultTableViewCell.swift */; };
+		D1FBA07F1F570042002C19E2 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA07D1F570042002C19E2 /* ResultTableViewCell.xib */; };
 		F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217F01F4D66210041C7C9 /* TabBarViewController.swift */; };
 		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
 		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
@@ -65,6 +67,8 @@
 		D1CB715D1F513B66001D49BA /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		D1CB715F1F514336001D49BA /* BankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
 		D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		D1FBA07C1F570042002C19E2 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		D1FBA07D1F570042002C19E2 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		F50217F01F4D66210041C7C9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -193,13 +197,15 @@
 				F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */,
 				F50217F01F4D66210041C7C9 /* TabBarViewController.swift */,
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
+				D1FBA07C1F570042002C19E2 /* ResultTableViewCell.swift */,
+				D1FBA07D1F570042002C19E2 /* ResultTableViewCell.xib */,
+				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				D1CB71591F511686001D49BA /* TestTextfield.swift */,
 				F5D160201F56C2140089C2D7 /* Triangle.swift */,
 				D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */,
 				D1C3A7A01F51A7BE00F47EF1 /* StoryBoards */,
 				D1C3A79F1F51A22500F47EF1 /* View Controllers */,
 				D1C3A79E1F51A20E00F47EF1 /* Data Models */,
-				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				F5461B911F4BF7AB00DE0784 /* Assets.xcassets */,
 				F5461B931F4BF7AB00DE0784 /* LaunchScreen.storyboard */,
 				F5461B961F4BF7AB00DE0784 /* Info.plist */,
@@ -344,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FBA07F1F570042002C19E2 /* ResultTableViewCell.xib in Resources */,
 				F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */,
 				F5461B921F4BF7AB00DE0784 /* Assets.xcassets in Resources */,
 				F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */,
@@ -512,6 +519,7 @@
 			files = (
 				F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */,
 				F5D160211F56C2140089C2D7 /* Triangle.swift in Sources */,
+				D1FBA07E1F570042002C19E2 /* ResultTableViewCell.swift in Sources */,
 				D1CB71601F514336001D49BA /* BankModel.swift in Sources */,
 				D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */,
 				D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */,

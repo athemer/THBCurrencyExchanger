@@ -14,8 +14,24 @@ class MapViewController: UIViewController {
 
     @IBOutlet weak var mapView: UIView!
 
+    let marker = GMSMarker()
+
+//    let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 10.0)
+
+    let mapView2 = GMSMapView.map(withFrame: CGRect.zero, camera: GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 10.0))
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+//        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
+        mapView2.isMyLocationEnabled = true
+        self.mapView = mapView2
+
+        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+        marker.title = "Sydney"
+        marker.snippet = "Australia"
+
+        marker.map = mapView2
 
         // Do any additional setup after loading the view.
     }
@@ -25,17 +41,13 @@ class MapViewController: UIViewController {
 
         // Create a GMSCameraPosition that tells the map to display the
         // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 10.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        mapView.isMyLocationEnabled = true
-                self.mapView = mapView
+
+
+
 
         // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
+
+
 
     }
 

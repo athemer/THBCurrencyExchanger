@@ -17,11 +17,11 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
-    @IBOutlet weak var buttomBaseView: UIView!
-
     @IBOutlet weak var top: GradientView!
 
     @IBOutlet weak var baseTextView: UIView!
+
+    @IBOutlet weak var goButton: UIButton!
 
     let manager = NetWorkManager()
 
@@ -72,7 +72,7 @@ class MainViewController: UIViewController {
         super.viewDidAppear(animated)
 
         
-        self.manager.scrapeSuperRichOrangeBr8()
+//        self.manager.scrapeSuperRichOrangeBr8()
 //        self.showNotReachableAlert()
 
     }
@@ -132,23 +132,33 @@ class MainViewController: UIViewController {
     @IBAction func toMap(_ sender: Any) {
 
 
-        if self.bo {
-
-            readResults()
-
-
-        } else {
-
-            self.manager.scrapeSuperRichOrangeBr8()
-            self.bo = true
-
-
-        }
-
-
+//        if self.bo {
+//
+//            readResults()
+//
+//
+//        } else {
+//
+//            self.manager.scrapeSuperRichOrangeBr8()
+//            self.bo = true
+//
+//
+//        }
 
 
-        //performSegue(withIdentifier: "mainToMap", sender: nil)
+
+
+        performSegue(withIdentifier: "mainToMap", sender: nil)
+
+    }
+
+
+    @IBAction func goButtonPressed(_ sender: UIButton) {
+
+//        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else { return }
+
+        performSegue(withIdentifier: "toResult", sender: nil)
+
 
     }
 
