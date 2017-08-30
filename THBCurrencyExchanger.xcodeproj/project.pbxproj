@@ -16,6 +16,7 @@
 		D1CB715A1F511686001D49BA /* TestTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71591F511686001D49BA /* TestTextfield.swift */; };
 		D1CB715E1F513B66001D49BA /* NetWorkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB715D1F513B66001D49BA /* NetWorkManager.swift */; };
 		D1CB71601F514336001D49BA /* BankModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB715F1F514336001D49BA /* BankModel.swift */; };
+		D1FBA07B1F55BE5E002C19E2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */; };
 		F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217F01F4D66210041C7C9 /* TabBarViewController.swift */; };
 		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
 		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
@@ -62,6 +63,7 @@
 		D1CB71591F511686001D49BA /* TestTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestTextfield.swift; sourceTree = "<group>"; };
 		D1CB715D1F513B66001D49BA /* NetWorkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkManager.swift; sourceTree = "<group>"; };
 		D1CB715F1F514336001D49BA /* BankModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BankModel.swift; sourceTree = "<group>"; };
+		D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F50217F01F4D66210041C7C9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 				F50217F01F4D66210041C7C9 /* TabBarViewController.swift */,
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
 				D1CB71591F511686001D49BA /* TestTextfield.swift */,
+				D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */,
 				D1C3A7A01F51A7BE00F47EF1 /* StoryBoards */,
 				D1C3A79F1F51A22500F47EF1 /* View Controllers */,
 				D1C3A79E1F51A20E00F47EF1 /* Data Models */,
@@ -511,6 +514,7 @@
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
 				D1C3A79D1F51A05E00F47EF1 /* LocationModel.swift in Sources */,
 				F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */,
+				D1FBA07B1F55BE5E002C19E2 /* Extensions.swift in Sources */,
 				D1CB715E1F513B66001D49BA /* NetWorkManager.swift in Sources */,
 				F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */,
 				F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */,

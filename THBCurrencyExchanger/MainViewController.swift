@@ -19,6 +19,10 @@ class MainViewController: UIViewController {
 
     @IBOutlet weak var buttomBaseView: UIView!
 
+    @IBOutlet weak var top: GradientView!
+
+    @IBOutlet weak var baseTextView: UIView!
+
     let manager = NetWorkManager()
 
     var bo: Bool = false
@@ -43,8 +47,24 @@ class MainViewController: UIViewController {
         configureTextField()
 
 
+        // dismiss keyboard 
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
 
 
+//        baseTextView.layer.shadowColor = UIColor.black.cgColor
+//        baseTextView.layer.shadowOpacity = 1
+//        baseTextView.layer.shadowOffset = CGSize.zero
+//        baseTextView.layer.shadowRadius = 10
+//        baseTextView.layer.shadowPath = UIBezierPath(rect: baseTextView.bounds).cgPath
+//        baseTextView.layer.shouldRasterize = true
+
+
+
+        let cgColor1 = UIColor(red: 255/255, green: 240/255, blue: 109/255, alpha: 1).cgColor
+        let cgColor2 = UIColor(red: 255/255, green: 240/255, blue: 169/255, alpha: 1).cgColor
+    
+        top.gradientLayer.colors = [cgColor1, cgColor2]
+        top.gradientLayer.gradient = GradientPoint.topBottom.draw()
 
     }
 
@@ -83,14 +103,18 @@ class MainViewController: UIViewController {
 
     func configureTextField() {
 
-        let textField = SkyFloatingLabelTextField(frame: CGRect(x: 50, y: 125, width: 300, height: 100))
-        textField.placeholder = "Name"
-        textField.title = "Your full name"
+        let frame = self.baseTextView.bounds
+
+        let textField = SkyFloatingLabelTextField(frame:frame)
+        textField.placeholder = "請輸入台幣總金額"
+        textField.title = "台幣金額"
         textField.font = UIFont(name: "Avenir Next", size: 50)
         textField.placeholderFont = UIFont(name: "Avenir Next", size: 25)
         textField.keyboardType = .numberPad
         textField.delegate = self
-        self.buttomBaseView.addSubview(textField)
+//        textField.borderWidth = 1
+//        textField.borderColor = .black
+        self.baseTextView.addSubview(textField)
 
 
     }

@@ -19,7 +19,21 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-uS-q4f">
                         <rect key="frame" x="0.0" y="0.0" width="163" height="257"/>
-                        <color key="backgroundColor" red="0.4823529411764706" green="0.63529411764705879" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFm-YT-21H">
+                                <rect key="frame" x="0.0" y="217" width="163" height="40"/>
+                                <color key="backgroundColor" red="0.29803921570000003" green="0.69803921570000005" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="aQb-Lp-Ddn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627450980392155" green="0.22352941176470587" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NFm-YT-21H" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" id="APF-Fz-wIx"/>
+                            <constraint firstAttribute="bottom" secondItem="NFm-YT-21H" secondAttribute="bottom" id="su3-fg-PVt"/>
+                            <constraint firstAttribute="trailing" secondItem="NFm-YT-21H" secondAttribute="trailing" id="yxo-Zq-6Cc"/>
+                        </constraints>
                     </view>
                 </subviews>
             </view>

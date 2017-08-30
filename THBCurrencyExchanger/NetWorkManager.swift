@@ -289,9 +289,6 @@ class NetWorkManager {
                 
                 print ("superRich 橘標總部『美金』『買匯』", Float(buyingUSDRepalced)!)
 
-
-
-
             }
             
             
