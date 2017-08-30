@@ -162,6 +162,8 @@ class NetWorkManager {
                 print ("台灣銀行 泰銖賣匯", rate.text!)
 
             }
+            
+            //html/body/div[1]/main/div[4]/table/tbody/tr[12]/td[2]
 
             for rate in doc.xpath("/html/body/div[1]/main/div[4]/table/tbody/tr[1]/td[3]") {
 

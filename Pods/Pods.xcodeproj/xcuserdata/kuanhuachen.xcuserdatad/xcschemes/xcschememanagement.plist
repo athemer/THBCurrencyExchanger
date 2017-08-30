@@ -4,25 +4,98 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Alamofire.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>EZLoadingActivity.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Hero.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>IQKeyboardManagerSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Kanna.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>Material-com.cosmicmind.material.fonts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>11</integer>
+		</dict>
+		<key>Material-com.cosmicmind.material.icons.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>12</integer>
+		</dict>
+		<key>Material.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
+		</dict>
 		<key>Pods-THBCurrencyExchanger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-THBCurrencyExchangerTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Pods-THBCurrencyExchangerUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Realm.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>RealmSwift.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>SCLAlertView.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>SkyFloatingLabelTextField.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
 		</dict>
 		<key>UPCarouselFlowLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -37,12 +110,87 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>4A3E211676B243619B026D147D272253</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4D10E4FF5A483B852B47CCA0B994E340</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4DEF0E0D6823089B59A1C29059567DDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6D70027C7CC8923E61FCC717138E5305</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79060FEB577DDCB70C47C0E5129A395D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A3D071E48E062A95320D83C39CF37A7D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A4860216FEB4357599A7EFF2F3FD155A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AB867E948622C5BA5606DB35401EE3E2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B68B30BAA59D3C581E36B229F5026576</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C235F77E101E742652CCF98FFDFA5182</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C40728CD9A14A2CB6DB10901F1C0AEBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA752B243C0B2B39791325E32B68BEF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E5CD470E4970CEE6A3DC3A70DCCDDA28</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F776C4B2C67888E11491EB6089D9CE5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F868B059EAC6FE78B6797BD2E744F7C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FF01A5F247DA8BE1B205E7A35501A125</key>
 		<dict>
 			<key>primary</key>
 			<true/>

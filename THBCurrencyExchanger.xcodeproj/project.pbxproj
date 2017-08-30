@@ -28,6 +28,7 @@
 		F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BB81F4BF8F500DE0784 /* MainViewController.swift */; };
 		F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */; };
 		F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */; };
+		F5D160211F56C2140089C2D7 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5D160201F56C2140089C2D7 /* Triangle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		F5461BB81F4BF8F500DE0784 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BanksCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BanksCollectionViewCell.xib; sourceTree = "<group>"; };
+		F5D160201F56C2140089C2D7 /* Triangle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +194,7 @@
 				F50217F01F4D66210041C7C9 /* TabBarViewController.swift */,
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
 				D1CB71591F511686001D49BA /* TestTextfield.swift */,
+				F5D160201F56C2140089C2D7 /* Triangle.swift */,
 				D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */,
 				D1C3A7A01F51A7BE00F47EF1 /* StoryBoards */,
 				D1C3A79F1F51A22500F47EF1 /* View Controllers */,
@@ -508,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */,
+				F5D160211F56C2140089C2D7 /* Triangle.swift in Sources */,
 				D1CB71601F514336001D49BA /* BankModel.swift in Sources */,
 				D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */,
 				D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */,

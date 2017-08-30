@@ -112,6 +112,7 @@ class MainViewController: UIViewController {
         textField.placeholderFont = UIFont(name: "Avenir Next", size: 25)
         textField.keyboardType = .numberPad
         textField.delegate = self
+        textField.textAlignment = .center
 //        textField.borderWidth = 1
 //        textField.borderColor = .black
         self.baseTextView.addSubview(textField)
