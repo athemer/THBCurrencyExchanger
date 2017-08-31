@@ -8,44 +8,31 @@
 
 import UIKit
 import GoogleMaps
+import Hero
 
 class MapViewController: UIViewController {
 
 
-    @IBOutlet weak var mapView: UIView!
-
-    let marker = GMSMarker()
-
-//    let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 10.0)
-
-    let mapView2 = GMSMapView.map(withFrame: CGRect.zero, camera: GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 10.0))
-
+    @IBOutlet weak var mapView: GMSMapView!
+//    var mapView:GMSMapView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        mapView2.isMyLocationEnabled = true
-        self.mapView = mapView2
+        
+        
+        mapView = GMSMapView.map(withFrame: self.mapView.frame, camera: GMSCameraPosition.camera(withLatitude: 25.029324, longitude: 121.441211, zoom: 16.0))
+        
+        //so the mapView is of width 200, height 200 and its center is same as center of the self.view
+//        mapView?.center = self.view.center
+//        mapView?.heroID = "mapView"
+        
+//        self.view.addSubview(mapView!)
 
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-
-        marker.map = mapView2
-
-        // Do any additional setup after loading the view.
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-
-
-
-
-        // Creates a marker in the center of the map.
 
 
 
@@ -56,16 +43,6 @@ class MapViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
     @IBAction func dismiss(_ sender: Any) {
 

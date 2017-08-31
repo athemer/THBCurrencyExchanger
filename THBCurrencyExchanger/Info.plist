@@ -40,6 +40,8 @@
 	<string>Main</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>需要取用現在位置</string>
+	<key>NSLocationUsageDescription</key>
+	<string>需要取用現在位置</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
