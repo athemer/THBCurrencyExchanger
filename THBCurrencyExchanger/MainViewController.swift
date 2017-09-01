@@ -12,7 +12,8 @@ import SCLAlertView
 import SkyFloatingLabelTextField
 import RealmSwift
 import EZLoadingActivity
-import GoogleMaps
+import Spring
+
 
 class MainViewController: UIViewController {
 
@@ -23,8 +24,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var baseTextView: UIView!
 
     @IBOutlet weak var goButton: UIButton!
-    
-    var mapView: GMSMapView?
 
     let manager = NetWorkManager()
 
@@ -70,16 +69,6 @@ class MainViewController: UIViewController {
         top.gradientLayer.colors = [cgColor1, cgColor2]
         top.gradientLayer.gradient = GradientPoint.topBottom.draw()
         
-        
-        
-        let frame = self.collectionView.frame
-        
-        mapView = GMSMapView.map(withFrame: frame, camera: GMSCameraPosition.camera(withLatitude: 25.029324, longitude: 121.441211, zoom: 16.0))
-        
-        mapView?.heroID = "mapView"
-        mapView?.isHidden = true
-        
-        self.view.addSubview(mapView!)
 
     }
 
@@ -160,7 +149,10 @@ class MainViewController: UIViewController {
 //
 //        }
 
-        performSegue(withIdentifier: "mainToMap", sender: nil)
+//        performSegue(withIdentifier: "mainToMap", sender: nil)
+        
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
+        self.present(vc!, animated: true, completion: nil)
 
     }
 

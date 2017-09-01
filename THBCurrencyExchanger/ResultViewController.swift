@@ -8,6 +8,7 @@
 
 import UIKit
 import UPCarouselFlowLayout
+import Hero
 
 class ResultViewController: UIViewController {
 
@@ -35,6 +36,8 @@ class ResultViewController: UIViewController {
 
 
         close_Button.layer.cornerRadius = 20
+        
+        self.tableView.allowsSelection = false
 
         // Do any additional setup after loading the view.
     }
@@ -71,7 +74,6 @@ class ResultViewController: UIViewController {
     @IBAction func closeButtonPressed(_ sender: UIButton) {
 
         dismiss(animated: true, completion: nil)
-
     }
 
 }

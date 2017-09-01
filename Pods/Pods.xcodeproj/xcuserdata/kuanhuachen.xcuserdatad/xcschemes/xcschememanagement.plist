@@ -6,96 +6,93 @@
 	<dict>
 		<key>Alamofire.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>5</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>EZLoadingActivity.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>6</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Hero.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>8</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Kanna.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Material-com.cosmicmind.material.fonts.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>11</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Material-com.cosmicmind.material.icons.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>12</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Material.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>10</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-THBCurrencyExchanger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-THBCurrencyExchangerTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>Pods-THBCurrencyExchangerUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>13</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>RealmSwift.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>14</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SCLAlertView.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>15</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SkyFloatingLabelTextField.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>16</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Spring.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>17</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>UPCarouselFlowLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -110,6 +107,36 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>16C7DCACF9280A9B9761AF661BE091D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>185E7A74F9BF7CFE2748578364C496FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>196F6B837A76FC730674DC514F11021F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>19D1298E9ABE5DB403685AA2DB394311</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3A8919ED4B510362E434ADF1448759BB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4686444EFA8EF1BAAAF493A042BD8FDB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4A3E211676B243619B026D147D272253</key>
 		<dict>
 			<key>primary</key>
@@ -120,7 +147,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DEF0E0D6823089B59A1C29059567DDB</key>
+		<key>5586FDABB6F131FD268639B07BAE02DC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -130,27 +157,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>79060FEB577DDCB70C47C0E5129A395D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3D071E48E062A95320D83C39CF37A7D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A4860216FEB4357599A7EFF2F3FD155A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AB867E948622C5BA5606DB35401EE3E2</key>
+		<key>B54A134F4EA0A11000DFC594AEF8DBD3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -165,27 +177,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C40728CD9A14A2CB6DB10901F1C0AEBA</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>DA752B243C0B2B39791325E32B68BEF7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>E5CD470E4970CEE6A3DC3A70DCCDDA28</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F776C4B2C67888E11491EB6089D9CE5F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F868B059EAC6FE78B6797BD2E744F7C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>

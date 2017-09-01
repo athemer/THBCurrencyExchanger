@@ -19,6 +19,7 @@ target 'THBCurrencyExchanger' do
   pod 'SwiftyJSON'
   pod 'RealmSwift'
   pod 'IQKeyboardManagerSwift'
+  pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift3'
 
 
 
