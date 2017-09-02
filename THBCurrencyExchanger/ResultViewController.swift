@@ -19,6 +19,23 @@ class ResultViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
 
+    let calculator = Calculator()
+
+
+    var resultModelArray: [ResultModel] = []
+
+
+    var totalTWD: Double = 0.0
+    var TWB_sellingTHB: Double = 0.0
+    var TWB_sellingUSD: Double = 0.0
+    var BKB_sellingTHB: Double = 0.0
+    var SPO_Head_BuyingTWD: Double = 0.0
+    var SPO_Head_BuyingUSD: Double = 0.0
+    var SPO_Branch_BuyingTWD: Double = 0.0
+    var SPO_Branch_BuyingUSD: Double = 0.0
+    var SPG_Head_BuyingTWD: Double = 0.0
+    var SPG_Head_BuyingUSD: Double = 0.0
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +55,17 @@ class ResultViewController: UIViewController {
         close_Button.layer.cornerRadius = 20
         
         self.tableView.allowsSelection = false
+
+
+
+
+        for model in resultModelArray {
+
+
+            print (" @@@@@ ", model.resultTHB)
+
+
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -70,6 +98,23 @@ class ResultViewController: UIViewController {
         
     }
 
+    func setUpResultModel() {
+
+        self.resultModelArray = calculator.setUpModelArray(totalTWD: 10000.0,
+                        TWB_sellingTHB: 0.95,
+                        TWB_sellingUSD: 32.07,
+                        BKB_sellingTHB: 0.99,
+                        SPO_Head_BuyingTWD: 1.12,
+                        SPO_Head_BuyingUSD: 33.51,
+                        SPO_Branch_BuyingTWD: 1.13,
+                        SPO_Branch_BuyingUSD: 30.33,
+                        SPG_Head_BuyingTWD: 1.02,
+                        SPG_Head_BuyingUSD: 33.33)
+
+        self.tableView.reloadData()
+
+    }
+
 
     @IBAction func closeButtonPressed(_ sender: UIButton) {
 
@@ -86,12 +131,14 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return self.resultModelArray.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "resultCell") as! ResultTableViewCell
+
+        
 
         return cell
 

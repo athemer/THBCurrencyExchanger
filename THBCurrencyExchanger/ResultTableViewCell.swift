@@ -16,6 +16,9 @@ class ResultTableViewCell: UITableViewCell {
 
     @IBOutlet weak var shadowView: UIView!
 
+    @IBOutlet weak var resultTHB_Label: UILabel!
+    
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
