@@ -30,7 +30,18 @@ class MainViewController: UIViewController {
     var bo: Bool = false
     
 
-    
+    //Rates
+    var TWB_sellingTHB: Double = 0.0
+    var TWB_sellingUSD: Double = 0.0
+    var BKB_sellingTHB: Double = 0.0
+    var SPO_Head_BuyingTWD: Double = 0.0
+    var SPO_Head_BuyingUSD: Double = 0.0
+    var SPO_Branch_BuyingTWD: Double = 0.0
+    var SPO_Branch_BuyingUSD: Double = 0.0
+    var SPG_Head_BuyingTWD: Double = 0.0
+    var SPG_Head_BuyingUSD: Double = 0.0
+
+
     //MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,9 +86,7 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        
-//        self.manager.scrapeSuperRichOrangeBr8()
-//        self.showNotReachableAlert()
+//        self.manager.scapeChain()
 
     }
 
@@ -124,12 +133,47 @@ class MainViewController: UIViewController {
 
     }
 
-
     func readResults(){
+
         let realm = try! Realm()
-        let users = realm.objects(BankModel.self)
-        if users.count > 0 {
-            print(users[0].bankName)
+        let models = realm.objects(BankModel.self)
+        if models.count > 0 {
+
+//            let corrdinate = models[0].coordinate[0].latitude
+
+            for model in models {
+
+
+                if model.bankModelId == "1" {
+
+                    self.TWB_sellingTHB = Double(model.sellingTHB!)!
+                    self.TWB_sellingUSD = Double(model.sellingUSD!)!
+
+                } else if model.bankModelId == "2" {
+
+                    self.BKB_sellingTHB = Double(model.sellingTHB!)!
+
+                } else if model.bankModelId == "3" {
+
+                    self.SPO_Head_BuyingTWD = Double(model.buyingTWD!)!
+                    self.SPO_Head_BuyingUSD = Double(model.buyingUSD!)!
+                    
+                } else if model.bankModelId == "4" {
+
+                    self.SPO_Branch_BuyingTWD = Double(model.buyingTWD!)!
+                    self.SPO_Branch_BuyingUSD = Double(model.buyingUSD!)!
+                    
+                } else if model.bankModelId == "5" {
+
+                    self.SPG_Head_BuyingTWD = Double(model.buyingTWD!)!
+                    self.SPG_Head_BuyingUSD = Double(model.buyingUSD!)!
+
+                }
+
+                print (" @@@@@ ", model.bankName )
+
+            }
+
         }
     }
 
@@ -138,12 +182,13 @@ class MainViewController: UIViewController {
 
 //        if self.bo {
 //
-//            readResults()
+            readResults()
+//            self.bo = false
 //
 //
 //        } else {
 //
-//            self.manager.scrapeSuperRichOrangeBr8()
+//            self.manager.scapeChain()
 //            self.bo = true
 //
 //
@@ -151,8 +196,8 @@ class MainViewController: UIViewController {
 
 //        performSegue(withIdentifier: "mainToMap", sender: nil)
         
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
-        self.present(vc!, animated: true, completion: nil)
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
+//        self.present(vc!, animated: true, completion: nil)
 
     }
 
@@ -161,7 +206,21 @@ class MainViewController: UIViewController {
 
 //        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else { return }
 
-        performSegue(withIdentifier: "toResult", sender: nil)
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+
+        vc.TWB_sellingUSD = self.TWB_sellingUSD
+        vc.TWB_sellingTHB = self.TWB_sellingTHB
+        vc.BKB_sellingTHB = self.BKB_sellingTHB
+        vc.SPO_Head_BuyingUSD = self.SPO_Head_BuyingUSD
+        vc.SPO_Head_BuyingTWD = self.SPO_Head_BuyingTWD
+        vc.SPO_Branch_BuyingUSD = self.SPO_Branch_BuyingUSD
+        vc.SPO_Branch_BuyingTWD = self.SPO_Branch_BuyingTWD
+        vc.SPG_Head_BuyingTWD = self.SPG_Head_BuyingTWD
+        vc.SPG_Head_BuyingUSD = self.SPG_Head_BuyingUSD
+
+        self.present(vc, animated: true, completion: nil)
+
+//        performSegue(withIdentifier: "toResult", sender: nil)
 
 
     }

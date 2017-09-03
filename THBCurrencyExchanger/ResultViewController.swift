@@ -57,15 +57,9 @@ class ResultViewController: UIViewController {
         self.tableView.allowsSelection = false
 
 
+        setUpResultModel()
 
 
-        for model in resultModelArray {
-
-
-            print (" @@@@@ ", model.resultTHB)
-
-
-        }
 
         // Do any additional setup after loading the view.
     }
@@ -101,17 +95,26 @@ class ResultViewController: UIViewController {
     func setUpResultModel() {
 
         self.resultModelArray = calculator.setUpModelArray(totalTWD: 10000.0,
-                        TWB_sellingTHB: 0.95,
-                        TWB_sellingUSD: 32.07,
-                        BKB_sellingTHB: 0.99,
-                        SPO_Head_BuyingTWD: 1.12,
-                        SPO_Head_BuyingUSD: 33.51,
-                        SPO_Branch_BuyingTWD: 1.13,
-                        SPO_Branch_BuyingUSD: 30.33,
-                        SPG_Head_BuyingTWD: 1.02,
-                        SPG_Head_BuyingUSD: 33.33)
+                        TWB_sellingTHB: self.TWB_sellingTHB,
+                        TWB_sellingUSD: self.TWB_sellingUSD,
+                        BKB_sellingTHB: self.BKB_sellingTHB,
+                        SPO_Head_BuyingTWD: self.SPO_Head_BuyingTWD,
+                        SPO_Head_BuyingUSD: self.SPO_Head_BuyingUSD,
+                        SPO_Branch_BuyingTWD: self.SPO_Branch_BuyingTWD,
+                        SPO_Branch_BuyingUSD: self.SPO_Branch_BuyingUSD,
+                        SPG_Head_BuyingTWD: self.SPG_Head_BuyingTWD,
+                        SPG_Head_BuyingUSD: self.SPG_Head_BuyingUSD)
 
         self.tableView.reloadData()
+        
+
+        for model in resultModelArray {
+
+
+            print (" @@@@@ ", model.resultTHB)
+            
+            
+        }
 
     }
 
@@ -138,7 +141,7 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
 
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "resultCell") as! ResultTableViewCell
 
-        
+        cell.resultTHB_Label.text = String(self.resultModelArray[indexPath.row].resultTHB)
 
         return cell
 

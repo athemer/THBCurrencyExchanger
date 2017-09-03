@@ -12,15 +12,13 @@ import RealmSwift
 
 
 class BankModel: Object {
-
-    //Essentials
-
+    
     dynamic var bankModelId: String = ""
     dynamic var bankName: String!
     dynamic var bankBranch: String?
 
-//    var coordinate: List<LocationModel>!
-
+    var coordinate = List<LocationModel>()
+    
     dynamic var buyingTWD: String?
     dynamic var buyingUSD: String?
     dynamic var sellingTHB: String?
