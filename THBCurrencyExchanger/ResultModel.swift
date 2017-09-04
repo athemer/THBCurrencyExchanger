@@ -43,11 +43,16 @@ class ResultModel {
         self.currencyRateFirst = currencyRateFirst
 
         self.currencyRateSecond = currencyRateSecond
+        
+        
 
         if currencyRateSecond != nil {
 
             self.resultTHB = totalTWD / currencyRateFirst * currencyRateSecond!
 
+            
+            print (" 用美金在泰國換匯 ", currencyRateFirst, currencyRateSecond!)
+            
 
         } else {
 
@@ -56,11 +61,15 @@ class ResultModel {
 
                 self.resultTHB = totalTWD * currencyRateFirst
 
-                print ("在泰國換匯一次")
+                print ("僅在泰國換匯一次", currencyRateFirst, self.resultTHB)
+                
+            } else {
+                
+                self.resultTHB = totalTWD / currencyRateFirst
+                
+                print ("僅在台灣換匯一次", currencyRateFirst, self.resultTHB)
                 
             }
-
-            self.resultTHB = totalTWD / currencyRateFirst
 
         }
     }

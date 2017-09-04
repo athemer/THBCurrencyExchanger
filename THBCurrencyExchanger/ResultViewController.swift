@@ -93,6 +93,16 @@ class ResultViewController: UIViewController {
     }
 
     func setUpResultModel() {
+        
+        print ("@@@@ TWB_sellingTHB", self.TWB_sellingTHB)
+        print ("@@@@ TWB_sellingUSD", self.TWB_sellingUSD)
+        print ("@@@@ BKB_sellingTHB", self.BKB_sellingTHB)
+        print ("@@@@ SPO_Head_BuyingTWD", self.SPO_Head_BuyingTWD)
+        print ("@@@@ SPO_Head_BuyingUSD", self.SPO_Head_BuyingUSD)
+        print ("@@@@ SPO_Branch_BuyingTWD", self.SPO_Branch_BuyingTWD)
+        print ("@@@@ SPO_Branch_BuyingUSD", self.SPO_Branch_BuyingUSD)
+        print ("@@@@ SPG_Head_BuyingTWD", self.SPG_Head_BuyingTWD)
+        print ("@@@@ SPG_Head_BuyingUSD", self.SPG_Head_BuyingUSD)
 
         self.resultModelArray = calculator.setUpModelArray(totalTWD: 10000.0,
                         TWB_sellingTHB: self.TWB_sellingTHB,
