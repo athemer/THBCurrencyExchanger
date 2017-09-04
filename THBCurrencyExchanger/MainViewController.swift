@@ -86,7 +86,7 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.manager.scapeChain()
+//        self.manager.scapeChain()
 
     }
 

@@ -241,7 +241,7 @@ class NetWorkManager {
 
             for rate in doc.xpath("/html/body/div[1]/main/div[4]/table/tbody/tr[12]/td[3]") {
 
-                BU = rate.text!
+                BT = rate.text!
 
                 print ("台灣銀行 泰銖賣匯", rate.text!)
 
@@ -249,7 +249,7 @@ class NetWorkManager {
 
             for rate in doc.xpath("/html/body/div[1]/main/div[4]/table/tbody/tr[1]/td[3]") {
 
-                BT = rate.text!
+                BU = rate.text!
 
                 print ("台灣銀行 美金賣匯", rate.text!)
 

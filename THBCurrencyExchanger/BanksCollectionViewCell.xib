@@ -11,68 +11,122 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BankCell" id="gTV-IL-0wX" customClass="BanksCollectionViewCell" customModule="THBCurrencyExchanger" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="301" height="257"/>
+            <rect key="frame" x="0.0" y="0.0" width="300" height="205"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="301" height="257"/>
+                <rect key="frame" x="0.0" y="0.0" width="300" height="205"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y5A-uS-q4f">
-                        <rect key="frame" x="0.0" y="0.0" width="301" height="257"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="205"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFm-YT-21H">
-                                <rect key="frame" x="0.0" y="217" width="301" height="40"/>
-                                <color key="backgroundColor" red="0.29803921570000003" green="0.69803921570000005" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr8-BE-jXg">
+                                <rect key="frame" x="5" y="65" width="290" height="31"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="美金買匯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojh-JK-L2X">
+                                <rect key="frame" x="140" y="132" width="80" height="17"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="aQb-Lp-Ddn"/>
+                                    <constraint firstAttribute="width" constant="80" id="Qvb-sS-9UT"/>
                                 </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SuperRich Orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnC-Uk-KD3">
-                                <rect key="frame" x="8" y="8" width="252" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="總部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr8-BE-jXg">
-                                <rect key="frame" x="8" y="45" width="252" height="62"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="美金買匯 33.33" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojh-JK-L2X">
-                                <rect key="frame" x="41" y="98" width="252" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30.1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="df3-Um-8aT">
+                                <rect key="frame" x="202" y="123" width="90" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="5Fy-ZT-4NW"/>
+                                    <constraint firstAttribute="height" constant="35" id="XoB-Wp-jwg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="台幣買匯 1.01" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYs-UM-Yus">
-                                <rect key="frame" x="41" y="127" width="252" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKG-1V-tjk">
+                                <rect key="frame" x="202" y="88" width="90" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="7Qs-oJ-Ibv"/>
+                                    <constraint firstAttribute="height" constant="35" id="Z47-tW-TFw"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIf-Dd-Qg7">
+                                <rect key="frame" x="0.0" y="166" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.2666666667" green="0.68627450980000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="qrw-S7-gDE"/>
+                                </constraints>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuperRich Orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnC-Uk-KD3">
+                                <rect key="frame" x="5" y="10" width="290" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rY8-4E-lJx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台幣買匯" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XYs-UM-Yus">
+                                <rect key="frame" x="140" y="93.5" width="80" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="Gb3-cn-Wuq"/>
+                                    <constraint firstAttribute="width" constant="80" id="OlZ-c9-zb4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.28627450980392155" green="0.22352941176470587" blue="0.59215686274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NFm-YT-21H" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" id="APF-Fz-wIx"/>
-                            <constraint firstAttribute="bottom" secondItem="NFm-YT-21H" secondAttribute="bottom" id="su3-fg-PVt"/>
-                            <constraint firstAttribute="trailing" secondItem="NFm-YT-21H" secondAttribute="trailing" id="yxo-Zq-6Cc"/>
+                            <constraint firstAttribute="trailing" secondItem="CnC-Uk-KD3" secondAttribute="trailing" constant="5" id="3vW-Kw-1AB"/>
+                            <constraint firstAttribute="trailing" secondItem="KKG-1V-tjk" secondAttribute="trailing" constant="8" id="BY0-wM-ZWv"/>
+                            <constraint firstItem="CnC-Uk-KD3" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" constant="5" id="Cha-3n-Is2"/>
+                            <constraint firstAttribute="trailing" secondItem="UIf-Dd-Qg7" secondAttribute="trailing" id="FE8-M0-l7P"/>
+                            <constraint firstAttribute="trailing" secondItem="ojh-JK-L2X" secondAttribute="trailing" constant="80" id="J47-5t-One"/>
+                            <constraint firstItem="df3-Um-8aT" firstAttribute="top" secondItem="KKG-1V-tjk" secondAttribute="bottom" id="KYI-ew-zdT"/>
+                            <constraint firstItem="CnC-Uk-KD3" firstAttribute="top" secondItem="Y5A-uS-q4f" secondAttribute="top" constant="10" id="LTN-xN-NTG"/>
+                            <constraint firstAttribute="trailing" secondItem="df3-Um-8aT" secondAttribute="trailing" constant="8" id="Ndm-Th-cb1"/>
+                            <constraint firstItem="ojh-JK-L2X" firstAttribute="centerY" secondItem="df3-Um-8aT" secondAttribute="centerY" id="RWq-Ba-yoF"/>
+                            <constraint firstItem="UIf-Dd-Qg7" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" id="YE3-O5-h8N"/>
+                            <constraint firstAttribute="trailing" secondItem="Wr8-BE-jXg" secondAttribute="trailing" constant="5" id="buB-mb-QhN"/>
+                            <constraint firstItem="Wr8-BE-jXg" firstAttribute="top" secondItem="CnC-Uk-KD3" secondAttribute="bottom" constant="5" id="dTp-8E-nWo"/>
+                            <constraint firstItem="UIf-Dd-Qg7" firstAttribute="top" secondItem="df3-Um-8aT" secondAttribute="bottom" constant="8" id="efh-47-WQS"/>
+                            <constraint firstItem="XYs-UM-Yus" firstAttribute="centerY" secondItem="KKG-1V-tjk" secondAttribute="centerY" id="fdD-vm-Zuf"/>
+                            <constraint firstItem="XYs-UM-Yus" firstAttribute="centerX" secondItem="ojh-JK-L2X" secondAttribute="centerX" id="sVi-PN-v2J"/>
+                            <constraint firstItem="Wr8-BE-jXg" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" constant="5" id="yLR-up-eB1"/>
+                            <constraint firstAttribute="bottom" secondItem="UIf-Dd-Qg7" secondAttribute="bottom" constant="-1" id="zFc-st-pdz"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Y5A-uS-q4f" secondAttribute="bottom" id="2UI-mp-YSs"/>
+                <constraint firstAttribute="bottom" secondItem="Y5A-uS-q4f" secondAttribute="bottom" id="6EQ-to-ego"/>
                 <constraint firstAttribute="trailing" secondItem="Y5A-uS-q4f" secondAttribute="trailing" id="6aK-Lt-dRm"/>
                 <constraint firstItem="Y5A-uS-q4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VdO-wD-7VG"/>
                 <constraint firstItem="Y5A-uS-q4f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="XCS-Hv-1VF"/>
+                <constraint firstItem="Y5A-uS-q4f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kdX-Zg-X7y"/>
+                <constraint firstItem="Y5A-uS-q4f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xlj-Cw-PiD"/>
+                <constraint firstAttribute="trailing" secondItem="Y5A-uS-q4f" secondAttribute="trailing" id="zcb-sj-Y8j"/>
             </constraints>
             <size key="customSize" width="301" height="206"/>
-            <point key="canvasLocation" x="41.5" y="-74.5"/>
+            <connections>
+                <outlet property="bankBranch_Label" destination="Wr8-BE-jXg" id="9Ka-3q-voQ"/>
+                <outlet property="bankName_Label" destination="CnC-Uk-KD3" id="Ny6-Ly-roy"/>
+                <outlet property="baseView" destination="Y5A-uS-q4f" id="G7B-Pc-ILI"/>
+                <outlet property="map_Button" destination="UIf-Dd-Qg7" id="KZE-Ec-uRp"/>
+                <outlet property="rate_1_Label" destination="KKG-1V-tjk" id="uMg-r5-gVv"/>
+                <outlet property="rate_1_name_Label" destination="XYs-UM-Yus" id="OZ4-wK-lhb"/>
+                <outlet property="rate_2_Label" destination="df3-Um-8aT" id="lD6-Ht-thX"/>
+                <outlet property="rate_2_name_Label" destination="ojh-JK-L2X" id="WK0-Kg-tCn"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="-74.5"/>
         </collectionViewCell>
     </objects>
 </document>
