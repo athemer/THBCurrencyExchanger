@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="300" height="205"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="總部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wr8-BE-jXg">
-                                <rect key="frame" x="5" y="65" width="290" height="31"/>
+                                <rect key="frame" x="15" y="65" width="280" height="31"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -61,9 +61,12 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="qrw-S7-gDE"/>
                                 </constraints>
+                                <state key="normal" title="檢視地圖">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SuperRich Orange" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CnC-Uk-KD3">
-                                <rect key="frame" x="5" y="10" width="290" height="50"/>
+                                <rect key="frame" x="15" y="10" width="280" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="rY8-4E-lJx"/>
                                 </constraints>
@@ -86,7 +89,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="CnC-Uk-KD3" secondAttribute="trailing" constant="5" id="3vW-Kw-1AB"/>
                             <constraint firstAttribute="trailing" secondItem="KKG-1V-tjk" secondAttribute="trailing" constant="8" id="BY0-wM-ZWv"/>
-                            <constraint firstItem="CnC-Uk-KD3" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" constant="5" id="Cha-3n-Is2"/>
+                            <constraint firstItem="CnC-Uk-KD3" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" constant="15" id="Cha-3n-Is2"/>
                             <constraint firstAttribute="trailing" secondItem="UIf-Dd-Qg7" secondAttribute="trailing" id="FE8-M0-l7P"/>
                             <constraint firstAttribute="trailing" secondItem="ojh-JK-L2X" secondAttribute="trailing" constant="80" id="J47-5t-One"/>
                             <constraint firstItem="df3-Um-8aT" firstAttribute="top" secondItem="KKG-1V-tjk" secondAttribute="bottom" id="KYI-ew-zdT"/>
@@ -99,7 +102,7 @@
                             <constraint firstItem="UIf-Dd-Qg7" firstAttribute="top" secondItem="df3-Um-8aT" secondAttribute="bottom" constant="8" id="efh-47-WQS"/>
                             <constraint firstItem="XYs-UM-Yus" firstAttribute="centerY" secondItem="KKG-1V-tjk" secondAttribute="centerY" id="fdD-vm-Zuf"/>
                             <constraint firstItem="XYs-UM-Yus" firstAttribute="centerX" secondItem="ojh-JK-L2X" secondAttribute="centerX" id="sVi-PN-v2J"/>
-                            <constraint firstItem="Wr8-BE-jXg" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" constant="5" id="yLR-up-eB1"/>
+                            <constraint firstItem="Wr8-BE-jXg" firstAttribute="leading" secondItem="Y5A-uS-q4f" secondAttribute="leading" constant="15" id="yLR-up-eB1"/>
                             <constraint firstAttribute="bottom" secondItem="UIf-Dd-Qg7" secondAttribute="bottom" constant="-1" id="zFc-st-pdz"/>
                         </constraints>
                     </view>

@@ -28,6 +28,8 @@ class MainViewController: UIViewController {
     let manager = NetWorkManager()
 
     var bo: Bool = false
+
+    var resultModelArray: [ResultModel] = []
     
 
     //Rates
@@ -242,7 +244,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 100
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
