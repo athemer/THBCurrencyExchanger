@@ -246,6 +246,15 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "BankCell", for: indexPath) as! BanksCollectionViewCell
 
         cell.bankName_Label.text = self.bankModelResults?[indexPath.item].bankName
+        cell.bankBranch_Label.text = self.bankModelResults?[indexPath.item].bankBranch != nil ? self.bankModelResults?[indexPath.item].bankBranch : "總部"
+
+        cell.rate_1_Label.text = self.bankModelResults?[indexPath.item].sellingTHB != nil ? self.bankModelResults?[indexPath.item].sellingTHB : self.bankModelResults?[indexPath.item].buyingTWD
+
+        cell.rate_2_Label.text = self.bankModelResults?[indexPath.item].sellingUSD != nil ? self.bankModelResults?[indexPath.item].sellingUSD : self.bankModelResults?[indexPath.item].buyingUSD
+
+        cell.rate_1_name_Label.text = self.bankModelResults?[indexPath.item].sellingTHB != nil ? "泰幣賣匯" : "台幣買匯"
+
+        cell.rate_2_name_Label.text = self.bankModelResults?[indexPath.item].sellingTHB != nil ? "美金賣匯" : "美金買匯"
 
         
         return cell
