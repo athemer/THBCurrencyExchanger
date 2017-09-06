@@ -25,9 +25,9 @@ class NetWorkManager {
 
     let group = DispatchGroup()
 
+    typealias completionHandler = () -> Void
 
-
-    func scapeChain() {
+    func scapeChain(completion: @escaping completionHandler) {
 
         if isConnectedToInternet {
 
@@ -46,6 +46,8 @@ class NetWorkManager {
                     EZLoadingActivity.hide(true, animated: true)
 
                 }
+
+                completion()
 
         } else {
 

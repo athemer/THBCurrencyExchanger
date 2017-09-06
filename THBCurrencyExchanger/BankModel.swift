@@ -29,5 +29,5 @@ class BankModel: Object {
         return "bankModelId"
     }
 
-
 }
+

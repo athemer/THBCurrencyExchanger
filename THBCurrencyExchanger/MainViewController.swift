@@ -30,6 +30,8 @@ class MainViewController: UIViewController {
     var bo: Bool = false
 
     var resultModelArray: [ResultModel] = []
+
+    var bankModelResults: Results<BankModel>?
     
 
     //Rates
@@ -88,7 +90,13 @@ class MainViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-//        self.manager.scapeChain()
+        self.manager.scapeChain {
+
+            print (" @@@@@ FINISHED ")
+
+            self.readResults()
+
+        }
 
     }
 
@@ -138,13 +146,13 @@ class MainViewController: UIViewController {
     func readResults(){
 
         let realm = try! Realm()
-        let models = realm.objects(BankModel.self)
+        let models = realm.objects(BankModel.self).sorted(byKeyPath: "bankModelId")
+
         if models.count > 0 {
 
 //            let corrdinate = models[0].coordinate[0].latitude
 
             for model in models {
-
 
                 if model.bankModelId == "1" {
 
@@ -172,7 +180,8 @@ class MainViewController: UIViewController {
 
                 }
 
-                print (" @@@@@ ", model.bankName )
+                self.bankModelResults = models
+                self.collectionView.reloadData()
 
             }
 
@@ -184,7 +193,7 @@ class MainViewController: UIViewController {
 
 //        if self.bo {
 //
-            readResults()
+//            readResults()
 //            self.bo = false
 //
 //
@@ -235,6 +244,9 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "BankCell", for: indexPath) as! BanksCollectionViewCell
+
+        cell.bankName_Label.text = self.bankModelResults?[indexPath.item].bankName
+
         
         return cell
     }
@@ -244,9 +256,9 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return self.bankModelResults != nil ? self.bankModelResults!.count : 0
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print (" @@@@@ ", indexPath.item)
     }
