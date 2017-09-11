@@ -33,7 +33,7 @@ class MainViewController: UIViewController {
 
     var bankModelResults: Results<BankModel>?
     
-
+    var textField = SkyFloatingLabelTextField()
     //Rates
     var TWB_sellingTHB: Double = 0.0
     var TWB_sellingUSD: Double = 0.0
@@ -108,7 +108,7 @@ class MainViewController: UIViewController {
     deinit {
         
         print (" @@@@@ MainViewController has been deinited ")
-        
+
     }
     
     func registerCell() {
@@ -128,7 +128,7 @@ class MainViewController: UIViewController {
 
         let frame = self.baseTextView.bounds
 
-        let textField = SkyFloatingLabelTextField(frame:frame)
+        textField = SkyFloatingLabelTextField(frame:frame)
         textField.placeholder = "請輸入台幣總金額"
         textField.title = "台幣金額"
         textField.font = UIFont(name: "Avenir Next", size: 50)
@@ -205,8 +205,8 @@ class MainViewController: UIViewController {
 //
 //        }
 
-//        performSegue(withIdentifier: "mainToMap", sender: nil)
-        
+        performSegue(withIdentifier: "mainToMap", sender: nil)
+
 //        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
 //        self.present(vc!, animated: true, completion: nil)
 
@@ -216,24 +216,41 @@ class MainViewController: UIViewController {
     @IBAction func goButtonPressed(_ sender: UIButton) {
 
 //        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else { return }
+//
+//        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
+//
+//        vc.TWB_sellingUSD = self.TWB_sellingUSD
+//        vc.TWB_sellingTHB = self.TWB_sellingTHB
+//        vc.BKB_sellingTHB = self.BKB_sellingTHB
+//        vc.SPO_Head_BuyingUSD = self.SPO_Head_BuyingUSD
+//        vc.SPO_Head_BuyingTWD = self.SPO_Head_BuyingTWD
+//        vc.SPO_Branch_BuyingUSD = self.SPO_Branch_BuyingUSD
+//        vc.SPO_Branch_BuyingTWD = self.SPO_Branch_BuyingTWD
+//        vc.SPG_Head_BuyingTWD = self.SPG_Head_BuyingTWD
+//        vc.SPG_Head_BuyingUSD = self.SPG_Head_BuyingUSD
+//
+//        self.present(vc, animated: true, completion: nil)
 
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "ResultViewController") as! ResultViewController
-
-        vc.TWB_sellingUSD = self.TWB_sellingUSD
-        vc.TWB_sellingTHB = self.TWB_sellingTHB
-        vc.BKB_sellingTHB = self.BKB_sellingTHB
-        vc.SPO_Head_BuyingUSD = self.SPO_Head_BuyingUSD
-        vc.SPO_Head_BuyingTWD = self.SPO_Head_BuyingTWD
-        vc.SPO_Branch_BuyingUSD = self.SPO_Branch_BuyingUSD
-        vc.SPO_Branch_BuyingTWD = self.SPO_Branch_BuyingTWD
-        vc.SPG_Head_BuyingTWD = self.SPG_Head_BuyingTWD
-        vc.SPG_Head_BuyingUSD = self.SPG_Head_BuyingUSD
-
-        self.present(vc, animated: true, completion: nil)
-
-//        performSegue(withIdentifier: "toResult", sender: nil)
+        performSegue(withIdentifier: "toResult", sender: nil)
 
 
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "toResult") {
+            let vc: ResultViewController = segue.destination as! ResultViewController
+
+            vc.TWD = self.textField.text!.toDouble
+            vc.TWB_sellingUSD = self.TWB_sellingUSD
+            vc.TWB_sellingTHB = self.TWB_sellingTHB
+            vc.BKB_sellingTHB = self.BKB_sellingTHB
+            vc.SPO_Head_BuyingUSD = self.SPO_Head_BuyingUSD
+            vc.SPO_Head_BuyingTWD = self.SPO_Head_BuyingTWD
+            vc.SPO_Branch_BuyingUSD = self.SPO_Branch_BuyingUSD
+            vc.SPO_Branch_BuyingTWD = self.SPO_Branch_BuyingTWD
+            vc.SPG_Head_BuyingTWD = self.SPG_Head_BuyingTWD
+            vc.SPG_Head_BuyingUSD = self.SPG_Head_BuyingUSD
+        }
     }
 
 
@@ -246,6 +263,7 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "BankCell", for: indexPath) as! BanksCollectionViewCell
 
         cell.bankName_Label.text = self.bankModelResults?[indexPath.item].bankName
+
         cell.bankBranch_Label.text = self.bankModelResults?[indexPath.item].bankBranch != nil ? self.bankModelResults?[indexPath.item].bankBranch : "總部"
 
         cell.rate_1_Label.text = self.bankModelResults?[indexPath.item].sellingTHB != nil ? self.bankModelResults?[indexPath.item].sellingTHB : self.bankModelResults?[indexPath.item].buyingTWD
@@ -255,6 +273,8 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
         cell.rate_1_name_Label.text = self.bankModelResults?[indexPath.item].sellingTHB != nil ? "泰幣賣匯" : "台幣買匯"
 
         cell.rate_2_name_Label.text = self.bankModelResults?[indexPath.item].sellingTHB != nil ? "美金賣匯" : "美金買匯"
+
+        cell.map_Button.addTarget(self, action: #selector(mapButtonAction(_:)), for: .touchUpInside)
 
         
         return cell
@@ -271,7 +291,30 @@ extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print (" @@@@@ ", indexPath.item)
     }
-    
+
+    func mapButtonAction(_ sender: UIButton) {
+
+        guard let cell = sender.superview?.superview?.superview as?BanksCollectionViewCell else { return }
+
+        let indexPath = self.collectionView.indexPath(for: cell)!
+
+        guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as? MapViewController else { return }
+
+//        vc.bankModel = (self.bankModelResults?[indexPath.item])!
+
+        vc.bankModel = (self.bankModelResults?.sorted(byKeyPath: "bankModelId")[indexPath.item])!
+
+        print (" @@@@@ ", indexPath.item)
+
+        print (" @@@@@ ", self.bankModelResults?[indexPath.item].bankName)
+
+        print (" @@@@@ ", self.bankModelResults?[indexPath.item].coordinate.count)
+
+        vc.locationModels = (self.bankModelResults?[indexPath.item].coordinate)!
+
+        present(vc, animated: true, completion: nil)
+
+    }
 }
 
 extension MainViewController: UITextFieldDelegate {

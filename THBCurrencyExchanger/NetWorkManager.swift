@@ -103,8 +103,6 @@ class NetWorkManager {
             headers: headers
             ).responseString { response in
 
-
-
                 if let html = response.result.value {
                     self.parseSPOrangeBr6(html: html)
                 }
@@ -190,24 +188,24 @@ class NetWorkManager {
                 let realm = try! Realm()
                 let bankModel = BankModel()
                 let coordinate = LocationModel()
-                coordinate.locationId = "1"
-                coordinate.longitude = "13.7398275"
-                coordinate.latitude = "100.5377808"
+                coordinate.locationId = "9"
+                coordinate.latitude = "13.7398275"
+                coordinate.longitude = "100.5377808"
 
                 let coordinate2 = LocationModel()
-                coordinate2.locationId = "1"
-                coordinate2.longitude = "13.7398275"
-                coordinate2.latitude = "100.5377808"
+                coordinate2.locationId = "10"
+                coordinate2.latitude = "13.7398275"
+                coordinate2.longitude = "100.5377808"
 
                 let coordinate3 = LocationModel()
-                coordinate3.locationId = "1"
-                coordinate3.longitude = "13.7398275"
-                coordinate3.latitude = "100.5377808"
+                coordinate3.locationId = "11"
+                coordinate3.latitude = "13.7398275"
+                coordinate3.longitude = "100.5377808"
 
                 let coordinate4 = LocationModel()
-                coordinate4.locationId = "1"
-                coordinate4.longitude = "13.7398275"
-                coordinate4.latitude = "100.5377808"
+                coordinate4.locationId = "12"
+                coordinate4.latitude = "13.7398275"
+                coordinate4.longitude = "100.5377808"
 
 
                 bankModel.bankModelId = "5"
@@ -216,6 +214,9 @@ class NetWorkManager {
                 bankModel.buyingUSD = "\(buyingUSDHead)"
                 bankModel.buyingTWD = "\(buyingTWDHead)"
                 bankModel.coordinate.append(coordinate)
+                bankModel.coordinate.append(coordinate2)
+                bankModel.coordinate.append(coordinate3)
+                bankModel.coordinate.append(coordinate4)
 
                 try! realm.write {
                     realm.add(bankModel, update: true)
@@ -262,8 +263,8 @@ class NetWorkManager {
             let coordinate = LocationModel()
 
             coordinate.locationId = "1"
-            coordinate.longitude = "25.04147"
-            coordinate.latitude = "121.5107233"
+            coordinate.latitude = "25.04147"
+            coordinate.longitude = "121.5107233"
 
             bankModel.bankModelId = "1"
             bankModel.bankName = "台灣銀行"
@@ -312,9 +313,9 @@ class NetWorkManager {
             let bankModel = BankModel()
             let coordinate = LocationModel()
 
-            coordinate.locationId = "1"
-            coordinate.longitude = "25.0528369"
-            coordinate.latitude = "121.5311522"
+            coordinate.locationId = "2"
+            coordinate.latitude = "25.0528369"
+            coordinate.longitude = "121.5311522"
 
             bankModel.bankModelId = "2"
             bankModel.bankName = "盤谷銀行"
@@ -364,21 +365,21 @@ class NetWorkManager {
                 let bankModel = BankModel()
                 let coordinate = LocationModel()
 
-                coordinate.locationId = "1"
-                coordinate.longitude = "13.7379903"
-                coordinate.latitude = "100.5543671"
+                coordinate.locationId = "3"
+                coordinate.latitude = "13.7379903"
+                coordinate.longitude = "100.5543671"
 
                 let coordinate2 = LocationModel()
 
-                coordinate2.locationId = "2"
-                coordinate2.longitude = "13.7230359"
-                coordinate2.latitude = "100.5179662"
+                coordinate2.locationId = "4"
+                coordinate2.latitude = "13.7230359"
+                coordinate2.longitude = "100.5179662"
 
                 let coordinate3 = LocationModel()
 
-                coordinate3.locationId = "3"
-                coordinate3.longitude = "13.7455814"
-                coordinate3.latitude = "100.5318784"
+                coordinate3.locationId = "5"
+                coordinate3.latitude = "13.7455814"
+                coordinate3.longitude = "100.5318784"
 
 
                 bankModel.bankModelId = "4"
@@ -387,6 +388,8 @@ class NetWorkManager {
                 bankModel.buyingUSD = "\(buyingUSDRepalced)"
                 bankModel.buyingTWD = "\(buyingTWDRepalced)"
                 bankModel.coordinate.append(coordinate)
+                bankModel.coordinate.append(coordinate2)
+                bankModel.coordinate.append(coordinate3)
 
                 try! realm.write {
                     realm.add(bankModel, update: true)
@@ -434,19 +437,19 @@ class NetWorkManager {
                 let bankModel = BankModel()
                 let coordinate = LocationModel()
 
-                coordinate.locationId = "1"
-                coordinate.longitude = "13.748183"
-                coordinate.latitude = "100.5391363"
+                coordinate.locationId = "6"
+                coordinate.latitude = "13.748183"
+                coordinate.longitude = "100.5391363"
 
                 let coordinate2 = LocationModel()
-                coordinate2.locationId = "2"
-                coordinate2.longitude = "13.725814"
-                coordinate2.latitude = "100.5252983"
+                coordinate2.locationId = "7"
+                coordinate2.latitude = "13.725814"
+                coordinate2.longitude = "100.5252983"
 
                 let coordinate3 = LocationModel()
-                coordinate3.locationId = "3"
-                coordinate3.longitude = "13.805863"
-                coordinate3.latitude = "100.562303"
+                coordinate3.locationId = "8"
+                coordinate3.latitude = "13.805863"
+                coordinate3.longitude = "100.562303"
 
 
                 bankModel.bankModelId = "3"
@@ -455,6 +458,8 @@ class NetWorkManager {
                 bankModel.buyingUSD = "\(buyingUSDRepalced)"
                 bankModel.buyingTWD = "\(buyingTWDRepalced)"
                 bankModel.coordinate.append(coordinate)
+                bankModel.coordinate.append(coordinate2)
+                bankModel.coordinate.append(coordinate3)
 
                 try! realm.write {
                     realm.add(bankModel, update: true)

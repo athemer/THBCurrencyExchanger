@@ -15,11 +15,9 @@ class BanksCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var map_Button: UIButton!
 
-
     @IBOutlet weak var bankName_Label: UILabel!
 
     @IBOutlet weak var bankBranch_Label: UILabel!
-
 
     @IBOutlet weak var rate_1_name_Label: UILabel!
 

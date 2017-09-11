@@ -24,7 +24,7 @@ class ResultViewController: UIViewController {
 
     var resultModelArray: [ResultModel] = []
 
-
+    var TWD: Double = 0.0
     var totalTWD: Double = 0.0
     var TWB_sellingTHB: Double = 0.0
     var TWB_sellingUSD: Double = 0.0
@@ -45,7 +45,7 @@ class ResultViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
 
-        tableView.rowHeight = 170
+        tableView.rowHeight = 250
         tableView.separatorStyle = .none
 
         registerCell()
@@ -104,7 +104,7 @@ class ResultViewController: UIViewController {
         print ("@@@@ SPG_Head_BuyingTWD", self.SPG_Head_BuyingTWD)
         print ("@@@@ SPG_Head_BuyingUSD", self.SPG_Head_BuyingUSD)
 
-        self.resultModelArray = calculator.setUpModelArray(totalTWD: 10000.0,
+        self.resultModelArray = calculator.setUpModelArray(totalTWD: self.TWD,
                         TWB_sellingTHB: self.TWB_sellingTHB,
                         TWB_sellingUSD: self.TWB_sellingUSD,
                         BKB_sellingTHB: self.BKB_sellingTHB,
@@ -151,7 +151,20 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
 
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "resultCell") as! ResultTableViewCell
 
-        cell.resultTHB_Label.text = String(self.resultModelArray[indexPath.row].resultTHB)
+
+        let arr = self.resultModelArray[indexPath.row]
+
+        cell.resultTHB_Label.text = String(self.resultModelArray[indexPath.row].resultTHB.rounded())
+
+        cell.label_1.text = arr.bankNameSecond != nil ? "先在『\(arr.countryFirst!)』的『\(arr.bankNameFirst!)』" : "直接在『\(arr.countryFirst!)』的『\(arr.bankNameFirst!)』"
+
+        cell.label_2.text = arr.bankNameSecond != nil ? "用『台幣』換『\(arr.currencyNameFirst!)』" : "用『台幣』換『泰銖』"
+
+        cell.label_3.text = arr.bankNameSecond != nil ? "然後在『\(arr.countrySecond!)』的『\(arr.bankNameSecond!)』" : ""
+
+        cell.label_4.text = arr.bankNameSecond != nil ? "用『美金』換『泰銖』" : ""
+
+
 
         return cell
 

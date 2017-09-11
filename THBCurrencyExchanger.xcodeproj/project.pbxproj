@@ -10,6 +10,8 @@
 		0CF0CDE6EBE6EDDAB33092FA /* Pods_THBCurrencyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */; };
 		42CA5C3EAF97EFD23D51349E /* Pods_THBCurrencyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */; };
 		89D6BCB186A65377CEE4004B /* Pods_THBCurrencyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */; };
+		D14B5C401F66D7CE009DFF3B /* MapMarkerInfoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14B5C3F1F66D7CE009DFF3B /* MapMarkerInfoWindow.swift */; };
+		D14B5C421F66D7E5009DFF3B /* MapMarkerInfoWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14B5C411F66D7E5009DFF3B /* MapMarkerInfoWindow.xib */; };
 		D1C3A79D1F51A05E00F47EF1 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */; };
 		D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71531F4DC42D001D49BA /* MapViewController.swift */; };
 		D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71551F4DC43F001D49BA /* ResultViewController.swift */; };
@@ -20,6 +22,7 @@
 		D1FBA07E1F570042002C19E2 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA07C1F570042002C19E2 /* ResultTableViewCell.swift */; };
 		D1FBA07F1F570042002C19E2 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1FBA07D1F570042002C19E2 /* ResultTableViewCell.xib */; };
 		D1FBA0811F5A9A8F002C19E2 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA0801F5A9A8F002C19E2 /* ResultModel.swift */; };
+		D1FBA0831F638CC6002C19E2 /* ExtensionString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FBA0821F638CC5002C19E2 /* ExtensionString.swift */; };
 		F50217F11F4D66210041C7C9 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50217F01F4D66210041C7C9 /* TabBarViewController.swift */; };
 		F5461B8B1F4BF7AB00DE0784 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */; };
 		F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5461B8C1F4BF7AB00DE0784 /* ViewController.swift */; };
@@ -61,6 +64,8 @@
 		82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D14B5C3F1F66D7CE009DFF3B /* MapMarkerInfoWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarkerInfoWindow.swift; sourceTree = "<group>"; };
+		D14B5C411F66D7E5009DFF3B /* MapMarkerInfoWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapMarkerInfoWindow.xib; sourceTree = "<group>"; };
 		D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D1CB71531F4DC42D001D49BA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D1CB71551F4DC43F001D49BA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +76,7 @@
 		D1FBA07C1F570042002C19E2 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		D1FBA07D1F570042002C19E2 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
 		D1FBA0801F5A9A8F002C19E2 /* ResultModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
+		D1FBA0821F638CC5002C19E2 /* ExtensionString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionString.swift; sourceTree = "<group>"; };
 		F50217F01F4D66210041C7C9 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		F5461B871F4BF7AB00DE0784 /* THBCurrencyExchanger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = THBCurrencyExchanger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5461B8A1F4BF7AB00DE0784 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -170,6 +176,15 @@
 			name = StoryBoards;
 			sourceTree = "<group>";
 		};
+		D1FBA0841F638CEC002C19E2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */,
+				D1FBA0821F638CC5002C19E2 /* ExtensionString.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		F5461B7E1F4BF7AB00DE0784 = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +220,9 @@
 				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
 				D1CB71591F511686001D49BA /* TestTextfield.swift */,
 				F5D160201F56C2140089C2D7 /* Triangle.swift */,
-				D1FBA07A1F55BE5E002C19E2 /* Extensions.swift */,
+				D14B5C3F1F66D7CE009DFF3B /* MapMarkerInfoWindow.swift */,
+				D14B5C411F66D7E5009DFF3B /* MapMarkerInfoWindow.xib */,
+				D1FBA0841F638CEC002C19E2 /* Extensions */,
 				D1C3A7A01F51A7BE00F47EF1 /* StoryBoards */,
 				D1C3A79F1F51A22500F47EF1 /* View Controllers */,
 				D1C3A79E1F51A20E00F47EF1 /* Data Models */,
@@ -355,6 +372,7 @@
 			files = (
 				D1FBA07F1F570042002C19E2 /* ResultTableViewCell.xib in Resources */,
 				F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */,
+				D14B5C421F66D7E5009DFF3B /* MapMarkerInfoWindow.xib in Resources */,
 				F5461B921F4BF7AB00DE0784 /* Assets.xcassets in Resources */,
 				F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */,
 				F5461B901F4BF7AB00DE0784 /* Main.storyboard in Resources */,
@@ -522,8 +540,10 @@
 			files = (
 				F5461BB91F4BF8F500DE0784 /* MainViewController.swift in Sources */,
 				F5D160211F56C2140089C2D7 /* Triangle.swift in Sources */,
+				D14B5C401F66D7CE009DFF3B /* MapMarkerInfoWindow.swift in Sources */,
 				D1FBA07E1F570042002C19E2 /* ResultTableViewCell.swift in Sources */,
 				D1CB71601F514336001D49BA /* BankModel.swift in Sources */,
+				D1FBA0831F638CC6002C19E2 /* ExtensionString.swift in Sources */,
 				D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */,
 				D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */,
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
