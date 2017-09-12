@@ -22,7 +22,14 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
 
     var tappedMarker = GMSMarker()
 
-    var mapMarkerInfoWindow = MapMarkerInfoWindow()
+    var infoWindow: MapViewMarkerInfoWindow = {
+        let view: MapViewMarkerInfoWindow = UIView.loadFromNibName(nibNamed: "MapViewMarkerInfoWindow", owner: nil, bundle: nil) as! MapViewMarkerInfoWindow
+        
+        view.layer.cornerRadius = 10
+        view.getRoute.addTarget(self, action: #selector(openMap), for: .touchUpInside)
+        
+        return view
+    }()
 
     
     override func viewDidLoad() {
@@ -51,6 +58,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
 
         mapView?.heroID = "mapView"
 
+        mapView?.delegate = self
 
         addMarkerToMap()
 
@@ -90,41 +98,72 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, markerInfoWindow marker: GMSMarker) -> UIView? {
         return UIView()
     }
-
-
+    
     // reset custom infowindow whenever marker is tapped
-//    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-//        let location = CLLocationCoordinate2D(latitude: (marker.userData as! location).lat, longitude: (marker.userData as! location).lon)
-//
-//        tappedMarker = marker
-//        infoWindow.removeFromSuperview()
-//        infoWindow = mapMarkerInfoWindow(frame: CGRect(x: 0, y: 0, width: 200, height: 100))
-//        infoWindow.Name.text = (marker.userData as! location).name
-//        infoWindow.Price.text = (marker.userData as! location).price.description
-//        infoWindow.Zone.text = (marker.userData as! location).zone.rawValue
-//        infoWindow.center = mapView.projection.point(for: location)
-//        infoWindow.button.addTarget(self, action: #selector(buttonTapped(_:)), for: .touchUpInside)
-//        self.view.addSubview(infoWindow)
-//
-//        // Remember to return false
-//        // so marker event is still handled by delegate
-//        return false
-//    }
-//
-//    // let the custom infowindow follows the camera
-//    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
-//        if (tappedMarker.userData != nil){
-//            let location = CLLocationCoordinate2D(latitude: (tappedMarker.userData as! location).lat, longitude: (tappedMarker.userData as! location).lon)
-//            infoWindow.center = mapView.projection.point(for: location)
-//        }
-//    }
-//
-//    // take care of the close event
-//    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
-//        infoWindow.removeFromSuperview()
-//    }
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        
+        tappedMarker = marker
+        
+        infoWindow.removeFromSuperview()
+        
+        infoWindow.frame = CGRect(x: 0, y: 0, width: 150, height: 100)
+        
+        infoWindow.center = mapView.projection.point(for: marker.position)
+        
+        infoWindow.center.y = infoWindow.center.y + 50
+        
+        infoWindow.bankNamLabel.text = "@@@@@"
+        
+        self.mapView?.addSubview(infoWindow)
+        
+        return false
+    }
+    
+    // let the custom infowindow follows the camera
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        
+        let location: CLLocationCoordinate2D = tappedMarker.position
+        
+        infoWindow.center = mapView.projection.point(for: location)
+        
+        infoWindow.center.y = infoWindow.center.y + 50
+        
+    }
+    
+    // take care of the close event
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+        infoWindow.removeFromSuperview()
+    }
+    
+    
+    
+    
 
-
+    func openMap() {
+        
+        let lati = self.tappedMarker.position.latitude
+        let longi = self.tappedMarker.position.longitude
+        
+        if (UIApplication.shared.canOpenURL(URL(string:"comgooglemaps://")!)) {
+            
+            let directionsRequest = "comgooglemaps-x-callback://" +
+                "?daddr=\(lati),\(longi)" +
+            "&x-success=sourceapp://?resume=true&x-source=AirApp"
+            
+            let directionsURL = URL(string: directionsRequest)!
+            UIApplication.shared.openURL(directionsURL)
+            
+            
+        } else {
+            
+            print("Can't use comgooglemaps://")
+            
+        }
+        
+        
+        print (" OPEN MAP ")
+        
+    }
 
     @IBAction func dismiss(_ sender: Any) {
 

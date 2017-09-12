@@ -1,14 +1,19 @@
 //
-//  MapMarkerInfoWindow.swift
+//  MapViewMarkerInfoWindow.swift
 //  THBCurrencyExchanger
 //
-//  Created by 陳冠華 on 2017/9/11.
+//  Created by kuanhuachen on 2017/9/12.
 //  Copyright © 2017年 kuanhuachen. All rights reserved.
 //
 
 import UIKit
 
-class MapMarkerInfoWindow: UIView {
+class MapViewMarkerInfoWindow: UIView {
+    
+    
+    @IBOutlet weak var bankNamLabel: UILabel!
+    
+    @IBOutlet weak var getRoute: UIButton!
 
     /*
     // Only override draw() if you perform custom drawing.
