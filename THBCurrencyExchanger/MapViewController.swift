@@ -31,9 +31,16 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         return view
     }()
 
+
+    @IBOutlet weak var dismiss_Button: UIButton!
+
+    
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.dismiss_Button.layer.cornerRadius = 20
 
         let frame = CGRect(x: 0, y: 0, width: 375, height: 667)
 
@@ -64,6 +71,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
 
         self.view.addSubview(mapView!)
 
+        self.view.bringSubview(toFront: dismiss_Button)
+
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -76,6 +85,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+
+    
+
 
     func addMarkerToMap() {
 
@@ -110,9 +123,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         infoWindow.center = mapView.projection.point(for: marker.position)
         
-        infoWindow.center.y = infoWindow.center.y + 50
+        infoWindow.center.y = infoWindow.center.y - 50
         
-        infoWindow.bankNamLabel.text = "@@@@@"
+        infoWindow.bankNamLabel.text = self.bankModel.bankName
         
         self.mapView?.addSubview(infoWindow)
         
@@ -126,7 +139,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         infoWindow.center = mapView.projection.point(for: location)
         
-        infoWindow.center.y = infoWindow.center.y + 50
+        infoWindow.center.y = infoWindow.center.y - 50
         
     }
     

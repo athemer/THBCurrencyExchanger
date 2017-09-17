@@ -10,6 +10,8 @@
 		0CF0CDE6EBE6EDDAB33092FA /* Pods_THBCurrencyExchangerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36C015269FECA8880DA3BA26 /* Pods_THBCurrencyExchangerUITests.framework */; };
 		42CA5C3EAF97EFD23D51349E /* Pods_THBCurrencyExchanger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E772A51A013F6581BF2DE55 /* Pods_THBCurrencyExchanger.framework */; };
 		89D6BCB186A65377CEE4004B /* Pods_THBCurrencyExchangerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07D2482789BF72295D87128B /* Pods_THBCurrencyExchangerTests.framework */; };
+		D182407E1F6E2F8B007C4952 /* HeaderViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D182407C1F6E2F8B007C4952 /* HeaderViewTableViewCell.swift */; };
+		D182407F1F6E2F8B007C4952 /* HeaderViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D182407D1F6E2F8B007C4952 /* HeaderViewTableViewCell.xib */; };
 		D1C3A79D1F51A05E00F47EF1 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */; };
 		D1CB71541F4DC42D001D49BA /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71531F4DC42D001D49BA /* MapViewController.swift */; };
 		D1CB71561F4DC43F001D49BA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CB71551F4DC43F001D49BA /* ResultViewController.swift */; };
@@ -65,6 +67,8 @@
 		82CDE8952462022FD9289852 /* Pods-THBCurrencyExchangerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerTests/Pods-THBCurrencyExchangerTests.release.xcconfig"; sourceTree = "<group>"; };
 		88D62B901C1AE5AFFF9BB6E3 /* Pods-THBCurrencyExchangerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		AD8E7BC5434664FBD1E6743B /* Pods-THBCurrencyExchangerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-THBCurrencyExchangerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-THBCurrencyExchangerUITests/Pods-THBCurrencyExchangerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D182407C1F6E2F8B007C4952 /* HeaderViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderViewTableViewCell.swift; sourceTree = "<group>"; };
+		D182407D1F6E2F8B007C4952 /* HeaderViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderViewTableViewCell.xib; sourceTree = "<group>"; };
 		D1C3A79C1F51A05E00F47EF1 /* LocationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
 		D1CB71531F4DC42D001D49BA /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		D1CB71551F4DC43F001D49BA /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +224,8 @@
 				F5461BBA1F4BF98200DE0784 /* BanksCollectionViewCell.swift */,
 				D1FBA07C1F570042002C19E2 /* ResultTableViewCell.swift */,
 				F5E1A9241F67D382004ABAF0 /* MapViewMarkerInfoWindow.swift */,
+				D182407C1F6E2F8B007C4952 /* HeaderViewTableViewCell.swift */,
+				D182407D1F6E2F8B007C4952 /* HeaderViewTableViewCell.xib */,
 				F5E1A9261F67D39B004ABAF0 /* MapViewMarkerInfoWindow.xib */,
 				D1FBA07D1F570042002C19E2 /* ResultTableViewCell.xib */,
 				F5461BBB1F4BF98200DE0784 /* BanksCollectionViewCell.xib */,
@@ -376,6 +382,7 @@
 				D1FBA07F1F570042002C19E2 /* ResultTableViewCell.xib in Resources */,
 				F5461B951F4BF7AB00DE0784 /* LaunchScreen.storyboard in Resources */,
 				F5461B921F4BF7AB00DE0784 /* Assets.xcassets in Resources */,
+				D182407F1F6E2F8B007C4952 /* HeaderViewTableViewCell.xib in Resources */,
 				F5E1A9271F67D39B004ABAF0 /* MapViewMarkerInfoWindow.xib in Resources */,
 				F5461BBD1F4BF98200DE0784 /* BanksCollectionViewCell.xib in Resources */,
 				F5461B901F4BF7AB00DE0784 /* Main.storyboard in Resources */,
@@ -552,6 +559,7 @@
 				F5461B8D1F4BF7AB00DE0784 /* ViewController.swift in Sources */,
 				D1C3A79D1F51A05E00F47EF1 /* LocationModel.swift in Sources */,
 				D1FBA0811F5A9A8F002C19E2 /* ResultModel.swift in Sources */,
+				D182407E1F6E2F8B007C4952 /* HeaderViewTableViewCell.swift in Sources */,
 				F5461BBC1F4BF98200DE0784 /* BanksCollectionViewCell.swift in Sources */,
 				F5E1A9291F67D5BB004ABAF0 /* ExtensionsUIView.swift in Sources */,
 				D1FBA07B1F55BE5E002C19E2 /* Extensions.swift in Sources */,

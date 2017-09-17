@@ -13,7 +13,7 @@ import Hero
 class ResultViewController: UIViewController {
 
 
-    @IBOutlet weak var tableView: UITableView!
+//    @IBOutlet weak var tableView: UITableView!
 
     @IBOutlet weak var close_Button: UIButton!
 
@@ -21,6 +21,18 @@ class ResultViewController: UIViewController {
 
     let calculator = Calculator()
 
+
+    let imageViewHeight: CGFloat = 150.0
+
+    let imageView = UIImageView()
+
+    let tableView = UITableView()
+
+    var imageViewTopConstraint: NSLayoutConstraint?
+
+    var imageViewHeightConstraint: NSLayoutConstraint?
+
+    var tableViewTopConstraint: NSLayoutConstraint?
 
     var resultModelArray: [ResultModel] = []
 
@@ -39,9 +51,6 @@ class ResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        tableView.delegate = self
-        tableView.dataSource = self
-
         collectionView.delegate = self
         collectionView.dataSource = self
 
@@ -58,6 +67,13 @@ class ResultViewController: UIViewController {
 
 
         setUpResultModel()
+
+
+        automaticallyAdjustsScrollViewInsets = false
+
+        setUpTableView()
+
+        setUpImageView()
 
 
 
@@ -128,6 +144,137 @@ class ResultViewController: UIViewController {
 
     }
 
+    func setUpTableView() {
+        //2
+        tableView.contentInset = UIEdgeInsets(top: imageViewHeight, left: 0, bottom: 0, right: 0)
+        //3
+        tableView.contentOffset = CGPoint(x: 0, y: -imageViewHeight)
+
+        tableView.delegate = self
+        tableView.dataSource = self
+
+        view.addSubview(tableView)
+
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+
+        tableViewTopConstraint = tableView.topAnchor.constraint(equalTo: view.topAnchor)
+
+        tableViewTopConstraint?.isActive = true
+
+        tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+
+        tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+
+        tableView.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor).isActive = true
+
+        self.view.bringSubview(toFront: close_Button)
+
+    }
+
+    func setUpImageView() {
+
+        imageView.image = UIImage(named: "TRO")
+
+        imageView.contentMode = .scaleAspectFit
+
+        imageView.clipsToBounds = true
+
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+
+        imageView.backgroundColor = UIColor(red: 73/255, green: 57/255, blue: 151/255, alpha: 1)
+
+        view.addSubview(imageView)
+
+        imageViewTopConstraint = imageView.topAnchor.constraint(equalTo: view.topAnchor)
+
+        imageViewTopConstraint?.isActive = true
+
+        imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+
+        imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+
+        imageViewHeightConstraint = imageView.heightAnchor.constraint(equalToConstant: imageViewHeight)
+        
+        imageViewHeightConstraint?.isActive = true
+    }
+
+
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+        if (scrollView.contentOffset.y > -imageViewHeight) && (scrollView.contentOffset.y < 20) {
+
+            changeImageViewTopConstraint(contentOffset: scrollView.contentOffset)
+            changeTableViewHeightConstraint(contentOffset: scrollView.contentOffset)
+
+        } else if scrollView.contentOffset.y <= -imageViewHeight {
+
+            changeImageViewHeightConstraint(contentOffset: scrollView.contentOffset)
+        }
+    }
+
+    func changeImageViewTopConstraint(contentOffset: CGPoint) {
+
+        imageViewTopConstraint?.isActive = false
+
+        imageViewHeightConstraint?.isActive = false
+
+        imageViewTopConstraint = imageView.topAnchor.constraint(
+            equalTo: view.topAnchor,
+            constant: -(contentOffset.y - (-imageViewHeight))
+        )
+
+        imageViewHeightConstraint = imageView.heightAnchor.constraint(equalToConstant: imageViewHeight)
+
+        imageViewTopConstraint?.isActive = true
+
+        imageViewHeightConstraint?.isActive = true
+
+        view.layoutIfNeeded()
+    }
+
+    func changeImageViewHeightConstraint(contentOffset: CGPoint) {
+
+        imageViewTopConstraint?.isActive = false
+
+        imageViewHeightConstraint?.isActive = false
+
+        imageViewTopConstraint = imageView.topAnchor.constraint(equalTo: view.topAnchor)
+
+        imageViewHeightConstraint = imageView.heightAnchor.constraint(equalToConstant: -contentOffset.y)
+
+        imageViewTopConstraint?.isActive = true
+
+        imageViewHeightConstraint?.isActive = true
+
+        view.layoutIfNeeded()
+    }
+
+    func changeTableViewHeightConstraint(contentOffset: CGPoint) {
+
+        tableViewTopConstraint?.isActive = false
+
+
+//        var const = 0
+//
+//        if -(contentOffset.y - (-imageViewHeight)) > 0 {
+//
+//            const = -(contentOffset.y - (-imageViewHeight))
+//
+//        } else {
+//
+//
+//        }
+
+
+        tableViewTopConstraint = tableView.topAnchor.constraint(
+            equalTo: view.topAnchor,
+            constant: -(contentOffset.y - (-imageViewHeight))
+        )
+
+        tableViewTopConstraint?.isActive = true
+        
+        view.layoutIfNeeded()
+    }
 
     @IBAction func closeButtonPressed(_ sender: UIButton) {
 
@@ -169,6 +316,57 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
 
     }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        return "*******"
+//    }
+
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+            let view = UIView()
+
+            view.height = 50
+            view.width = 375
+
+            view.backgroundColor = UIColor(red: 73/255, green: 57/255, blue: 151/255, alpha: 1)
+
+            let label = UILabel()
+
+            label.text = "換匯結果列表"
+
+//            label.translatesAutoresizingMaskIntoConstraints = false
+//
+//            label.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+//
+//            label.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
+//
+//            label.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
+//
+//            label.bottomAnchor.constraint(equalTo: bottomLayoutGuide.topAnchor).isActive = true
+
+
+            label.frame = view.bounds
+
+            label.textAlignment = .center
+            label.textColor = .white
+            
+            view.addSubview(label)
+            
+            return view
+
+
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "HeaderViewTableViewCell") as! HeaderViewTableViewCell
+//
+//        return cell
+    }
+
+
+
 
 
 
